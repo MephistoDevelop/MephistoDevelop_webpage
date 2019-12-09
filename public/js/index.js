@@ -17,6 +17,7 @@ window.onload = function() {
   }
 
   text.innerHTML = newDom;
+
   text2.innerHTML = newDom2;
   var length = text.children.length;
 
