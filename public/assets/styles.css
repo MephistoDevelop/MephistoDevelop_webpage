@@ -128,8 +128,8 @@ body {
 .btn-2:hover {
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
-  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
-  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  -webkit-transition-timing-function: cubic-bezier(0.27, 1.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.27, 2.02, 0.31, -0.36);
 }
 .btn-2 a:hover {
   text-decoration: underline;
