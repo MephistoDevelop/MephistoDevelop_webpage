@@ -30,6 +30,19 @@ body {
   border-color: #384e79 !important;
   transition: all 1s ease 0s;
 }
+#btnstart {
+  animation-duration: 2s;
+  animation-name: slideindos;
+}
+@keyframes slideindos {
+  from {
+    margin-right: 150%;
+  }
+
+  to {
+    margin-right: 0%;
+  }
+}
 
 #btnspanish {
   background-size: cover;
@@ -149,18 +162,6 @@ p {
   border-radius: 50px;
   border: 1px solid white;
 }
-
-@keyframes an {
-  from {
-    opacity: 0;
-    transform: perspective(500px) translate3d(-35px, -40px, -150px)
-      rotate3d(1, -1, 0, 35deg);
-  }
-  to {
-    opacity: 1;
-    transform: perspective(500px) translate3d(0, 0, 0);
-  }
-}
 #githubicon:hover {
   width: 40px;
   height: auto;
@@ -197,6 +198,8 @@ p {
 }
 
 #navbar-main {
+  animation-duration: 3s;
+  animation-name: navbar;
   color: black;
   opacity: 0.8;
   font-size: 18px;
@@ -220,6 +223,15 @@ p {
   text-decoration: none;
   transition: ease-in 1;
   animation-duration: 3s;
+}
+@keyframes navbar {
+  from {
+    margin-top: 120%;
+  }
+
+  to {
+    margin-bottom: 0%;
+  }
 }
 #linkedinicon:hover {
   width: 40px;
