@@ -16,4 +16,6 @@ Simple repository to save some of my experience like Full-Stack Web Developer
 
 [MephistoDevelop](https://www.github.com/mephistodevelop)
 
-[Live Demo...](https://mephistodevelop.firebaseapp.com)
+[Live Firebase Demo](https://mephistodevelop.firebaseapp.com)
+
+[Live GitHub Pages](https://mephistodevelop.github.io/MephistoDevelop_webpage/public/index.html)
