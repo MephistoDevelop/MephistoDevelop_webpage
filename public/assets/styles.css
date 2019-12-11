@@ -4,16 +4,17 @@
 
 body {
   margin: 0;
-  background-color: #232323;
   color: #fff;
   font-family: Calibri, sans-serif;
   height: 100vh;
+  margin-left: -4px;
+  margin-bottom: -5px;
 }
 .button {
   background-color: #384e79;
   border: none;
   border-radius: 10px;
-  height: auto;
+  height: 10%;
   color: black;
   font-weight: bolder;
   font-size: 28px;
@@ -23,12 +24,25 @@ body {
   color: white;
   border: 4px solid white !important;
   border-radius: 3px;
+  margin-top: 10%;
 }
 #btnstart:hover {
-  color: black !important;
   border-radius: 50px;
-  border-color: black !important;
+  border-color: #384e79 !important;
   transition: all 1s ease 0s;
+}
+#btnstart {
+  animation-duration: 2s;
+  animation-name: slideindos;
+}
+@keyframes slideindos {
+  from {
+    margin-right: 150%;
+  }
+
+  to {
+    margin-right: 0%;
+  }
 }
 
 #btnspanish {
@@ -60,49 +74,76 @@ body {
 }
 
 .btn-1 {
-  display: inline-block;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 25%;
+  background-color: blue;
+  border-radius: 10rem;
+  /* display: inline-block;*/
   padding: 0.75rem 1.25rem;
   border-radius: 10rem;
   color: #fff;
   text-transform: uppercase;
   font-size: 1rem;
-  letter-spacing: 0.15rem;
   transition: all 0.3s;
   position: relative;
   overflow: hidden;
   z-index: 1;
+  animation-duration: 3s;
+  animation-name: slidein;
+  margin-left: 40%;
 }
-.btn-1:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: blue;
-  border-radius: 10rem;
-  z-index: -2;
-}
-.btn-1:hover {
-  color: #fff;
-  content: "";
-  bottom: 0;
-  left: 0;
-  width: 0%;
-  height: 100%;
-  background-color: darken(red, 15%);
-  transition: all 0.3s;
-  border-radius: 10rem;
-  z-index: -1;
+@keyframes slidein {
+  from {
+    margin-left: 110%;
+  }
+
+  to {
+    margin-left: 40%;
+  }
 }
 
+.btn-1:hover {
+  color: whitesmoke;
+  background-color: darken(red, 15%);
+  border-radius: 10rem;
+  width: 30%;
+  margin-left: 36%;
+  opacity: 1;
+  background-color: black;
+  height: auto;
+}
+
+.btn-2 {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(0.5px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 1s;
+}
+.btn-2:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+.btn-2 a:hover {
+  text-decoration: underline;
+}
 .center-e {
-  width: 100%;
-  height: 85vh;
+  width: 99vw;
+  height: 98vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #232323;
+  margin: 0;
+  padding: 0;
 }
 
 p {
@@ -120,66 +161,86 @@ p {
   display: inline-block;
   text-align: justify;
   text-justify: inter-word;
+  margin-top: 0%;
 }
 #githubicon {
   background-color: white;
   border-radius: 50px;
   border: 1px solid white;
 }
-
-@keyframes an {
-  from {
-    opacity: 0;
-    transform: perspective(500px) translate3d(-35px, -40px, -150px)
-      rotate3d(1, -1, 0, 35deg);
-  }
-  to {
-    opacity: 1;
-    transform: perspective(500px) translate3d(0, 0, 0);
-  }
-}
 #githubicon:hover {
   width: 40px;
   height: auto;
 }
 .mylink {
-  position: absolute;
-  z-index: 150;
+  /*position: absolute;*/
   bottom: 0;
   right: 0;
   width: 100%;
   text-align: right;
   padding: 0.6rem;
   position: fixed;
+  animation-duration: 3s;
+  animation-name: slideinlink;
 }
+@keyframes slideinlink {
+  from {
+    margin-left: 110%;
+  }
 
+  to {
+    margin-left: 0%;
+  }
+}
 .mylink a {
   font-family: Calibri;
-  color: #fff;
+  color: black;
   opacity: 0.7;
   transition: opacity 0.3s;
   text-decoration: none;
 }
 .mylink a:hover {
   opacity: 1;
+  color: royalblue;
 }
 
 #navbar-main {
+  animation-duration: 3s;
+  animation-name: navbar;
   color: black;
   opacity: 0.8;
   font-size: 18px;
   font-weight: bolder;
-  background-color: #384e79;
+  background-color: dimgray;
   margin: 0;
   color: whitesmoke !important;
   height: 50px;
   border-bottom: 1px blue;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: top 0.8s;
 }
 #navbar-main a {
   color: whitesmoke;
   font: 18px;
   font-weight: bolder;
+}
+#navbar-main a:hover {
+  height: 100%;
+  text-align: center;
+  text-decoration: none;
+  transition: ease-in 1;
+  animation-duration: 3s;
+  font-weight: bolder;
+  font-size: 18px;
+}
+@keyframes navbar {
+  from {
+    margin-top: 120%;
+  }
+
+  to {
+    margin-bottom: 0%;
+  }
 }
 #linkedinicon:hover {
   width: 40px;
