@@ -7,15 +7,17 @@ body {
   background-color: #232323;
   color: #fff;
   font-family: Calibri, sans-serif;
+  height: 100vh;
 }
 .button {
   background-color: #384e79;
   border: none;
   border-radius: 10px;
-  height: 40px;
+  height: auto;
   color: black;
   font-weight: bolder;
-  width: 15%;
+  font-size: 28px;
+  width: 35%;
   box-shadow: 2px 3px 8px gray;
   min-width: 150px;
   color: white;
@@ -23,15 +25,80 @@ body {
   border-radius: 3px;
 }
 #btnstart:hover {
-  color: whitesmoke !important;
+  color: black !important;
   border-radius: 50px;
-  border-color: #384e79 !important;
-  transition: all 0.6s ease 0s;
+  border-color: black !important;
+  transition: all 1s ease 0s;
 }
 
-.center {
+#btnspanish {
+  background-size: cover;
+  background-image: url(img/spanish.png);
+  height: 20px;
+  width: 32px;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#btnspanish:hover {
+  background-image: url(img/spanish.png);
+  height: 26px;
+  width: 45px;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#btnenglish {
+  background-image: url(img/english.png);
+  height: 20px;
+  width: 32px;
+  border: none;
+  background-size: cover;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#btnenglish:hover {
+  height: 26px;
+  width: 45px;
+}
+
+.btn-1 {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  border-radius: 10rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.15rem;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.btn-1:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  background-color: blue;
+  border-radius: 10rem;
+  z-index: -2;
+}
+.btn-1:hover {
+  color: #fff;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: darken(red, 15%);
+  transition: all 0.3s;
+  border-radius: 10rem;
+  z-index: -1;
+}
+
+.center-e {
+  width: 100%;
+  height: 85vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -39,19 +106,25 @@ body {
 }
 
 p {
-  width: 70%;
-  font-size: 18px;
+  width: 68%;
+  font-size: 22px;
   display: block;
   text-align: center;
+  min-width: 600px;
 }
 
 .char {
-  font-size: 22px;
+  font-size: 32px;
   height: 40px;
   animation: an 4s ease-out 1 both;
   display: inline-block;
   text-align: justify;
   text-justify: inter-word;
+}
+#githubicon {
+  background-color: white;
+  border-radius: 50px;
+  border: 1px solid white;
 }
 
 @keyframes an {
@@ -65,6 +138,10 @@ p {
     transform: perspective(500px) translate3d(0, 0, 0);
   }
 }
+#githubicon:hover {
+  width: 40px;
+  height: auto;
+}
 .mylink {
   position: absolute;
   z-index: 150;
@@ -73,16 +150,38 @@ p {
   width: 100%;
   text-align: right;
   padding: 0.6rem;
+  position: fixed;
 }
 
 .mylink a {
   font-family: Calibri;
   color: #fff;
-  border-bottom: 1px solid #fff;
-  opacity: 0.5;
+  opacity: 0.7;
   transition: opacity 0.3s;
   text-decoration: none;
 }
 .mylink a:hover {
   opacity: 1;
+}
+
+#navbar-main {
+  color: black;
+  opacity: 0.8;
+  font-size: 18px;
+  font-weight: bolder;
+  background-color: #384e79;
+  margin: 0;
+  color: whitesmoke !important;
+  height: 50px;
+  border-bottom: 1px blue;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#navbar-main a {
+  color: whitesmoke;
+  font: 18px;
+  font-weight: bolder;
+}
+#linkedinicon:hover {
+  width: 40px;
+  height: auto;
 }
