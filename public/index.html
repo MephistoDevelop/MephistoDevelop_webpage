@@ -4,9 +4,59 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
    <link rel="stylesheet" href="assets/styles.css"></link>
     <script src="js/index.js"></script>
-    <title>MephistoDevelop Portfolio</title>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/animationintro.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <title>MephistoDevelop Site</title>
   </head>
-  <body></body>
+  <body>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-app.js"></script>
+      <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-app.js"></script>
+      <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script>
+  // Your web app's Firebase configuration
+      var firebaseConfig = {
+      apiKey: "AIzaSyAeAmZYNYhxI_2M394CjfqAXAQ_2QCIQGs",
+      authDomain: "mephistodevelop.firebaseapp.com",
+      databaseURL: "https://mephistodevelop.firebaseio.com",
+      projectId: "mephistodevelop",
+      storageBucket: "mephistodevelop.appspot.com",
+      messagingSenderId: "201559418194",
+      appId: "1:201559418194:web:23edb5a8736080d225468b"
+    };
+    // In itialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    </script>
+<div class="m-1">
+    <div class="container">
+      <div class="center-e">
+        <p class="ml2" id="text">Web Full-Stack - Software Engineer </p>
+        <p class="ml3" id="texto">Hello My name is<b> Cristian Ines (MephistoDevelop)</b>, i love create solutions to make the difference.</p>
+        <button class="button"  id="btnstart">More About me</button>
+      </div>
+    </div>
+      <nav class="navbar fixed-top navbar-light" id="navbar-main">
+          <div class="ml-3 align-middle" id="flags">
+              <button class="mt-1" id="btnspanish" ></button>
+              <button id="btnenglish"></button>
+            </div>
+            <a class="" href="#">Fixed top</a>
+          <a class="" href="#">Hello</a>
+        </nav>
+      <div class="container text-center mt-5"><button class="btn-1">My Button</button></div>
+      <div class="mylink">
+          <a href="https://www.linkedin.com/in/cristian-hernandez1992/"><img src="assets/img/linkedin.png" alt="Linkedin icon" id="linkedinicon"></a>
+            <a href="https://github.com/MephistoDevelop"><img src="assets/img/github.png" alt="github icon" id="githubicon"></a>
+            <a target="_blank" href="https://github.com/MephistoDevelop">MephistoDevelop</a>
+          </div>
+    </div>
+  </body>
 </html>

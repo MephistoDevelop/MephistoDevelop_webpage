@@ -1,5 +1,14 @@
 {
   "projects": {
-    "default": "test-1a17d"
+    "default": "mephistodevelop"
+  },
+  "targets": {
+    "mephistodevelop": {
+      "hosting": {
+        "test": [
+          "mephistodevelop"
+        ]
+      }
+    }
   }
 }
