@@ -1,8 +1,4 @@
-var aboutme=document.getElementById
-
-function englis(){
-
-}
-function spanish{
-
+function englis() {}
+function spanish() {
+  window.location("https://www.quackit.com/javascript/javascript_redirect.cfm");
 }
