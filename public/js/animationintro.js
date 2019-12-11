@@ -1,5 +1,4 @@
 window.onload = function() {
-  //  Wrap every letter in a span
   var textWrapper = document.querySelector(".ml2");
   var textWrapper2 = document.querySelector(".ml3");
   textWrapper.innerHTML = textWrapper.textContent.replace(

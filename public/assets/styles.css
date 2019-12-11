@@ -13,7 +13,7 @@ body {
   background-color: #384e79;
   border: none;
   border-radius: 10px;
-  height: auto;
+  height: 13%;
   color: black;
   font-weight: bolder;
   font-size: 28px;
@@ -23,6 +23,7 @@ body {
   color: white;
   border: 4px solid white !important;
   border-radius: 3px;
+  margin-top: 10%;
 }
 #btnstart:hover {
   color: black !important;
@@ -60,40 +61,46 @@ body {
 }
 
 .btn-1 {
-  display: inline-block;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 25%;
+  background-color: blue;
+  border-radius: 10rem;
+  /* display: inline-block;*/
   padding: 0.75rem 1.25rem;
   border-radius: 10rem;
   color: #fff;
   text-transform: uppercase;
   font-size: 1rem;
-  letter-spacing: 0.15rem;
   transition: all 0.3s;
   position: relative;
   overflow: hidden;
   z-index: 1;
+  animation-duration: 3s;
+  animation-name: slidein;
+  margin-left: 40%;
 }
-.btn-1:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: blue;
-  border-radius: 10rem;
-  z-index: -2;
+@keyframes slidein {
+  from {
+    margin-left: 110%;
+  }
+
+  to {
+    margin-left: 40%;
+  }
 }
+
 .btn-1:hover {
-  color: #fff;
-  content: "";
-  bottom: 0;
-  left: 0;
-  width: 0%;
-  height: 100%;
+  color: whitesmoke;
   background-color: darken(red, 15%);
-  transition: all 0.3s;
   border-radius: 10rem;
-  z-index: -1;
+  width: 30%;
+  margin-left: 36%;
+  opacity: 1;
+  background-color: black;
+  height: auto;
 }
 
 .center-e {
@@ -120,6 +127,7 @@ p {
   display: inline-block;
   text-align: justify;
   text-justify: inter-word;
+  margin-top: 0%;
 }
 #githubicon {
   background-color: white;
@@ -143,16 +151,25 @@ p {
   height: auto;
 }
 .mylink {
-  position: absolute;
-  z-index: 150;
+  /*position: absolute;*/
   bottom: 0;
   right: 0;
   width: 100%;
   text-align: right;
   padding: 0.6rem;
   position: fixed;
+  animation-duration: 3s;
+  animation-name: slideinlink;
 }
+@keyframes slideinlink {
+  from {
+    margin-left: 110%;
+  }
 
+  to {
+    margin-left: 0%;
+  }
+}
 .mylink a {
   font-family: Calibri;
   color: #fff;
