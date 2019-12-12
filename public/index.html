@@ -35,6 +35,10 @@
     };
     // In itialize Firebase
     firebase.initializeApp(firebaseConfig);
+
+    const preObject = document.getElementById('objeto');
+    const dbRefObject = firebase.database().ref().child('objeto');
+    dbRefObject.on('value',snap => console.log(snap.val()));
     </script>
     <nav class="navbar fixed-top navbar-light" id="navbar-main">
       <div class="ml-3 align-middle" id="flags">
@@ -62,5 +66,6 @@
             <a target="_blank" class="btn-2 ml-2" href="https://github.com/MephistoDevelop">MephistoDevelop</a>
       </div>
     </div>
+    <pre id="objeto"></pre>
   </body>
 </html>
