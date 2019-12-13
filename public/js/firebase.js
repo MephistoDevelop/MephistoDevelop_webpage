@@ -1,5 +1,5 @@
 window.onload = function() {
-  console.log(this.readOnce());
+  this.updateBook(1, true);
 };
 /*writeBookData(
     2,
@@ -12,10 +12,33 @@ window.onload = function() {
   );
 };*/
 
+function addfirebase() {
+  writeBookData(
+    4,
+    "Infierno de Dante",
+    "7 hells book  history",
+    "Dante alligery",
+    897,
+    true,
+    "https://www.dantesbooks.com"
+  );
+}
+
+function updateBook(bookId, status) {
+  const database = firebase.database();
+  let userRef = database.ref("books/" + bookId);
+  userRef.update({
+    read: status
+  });
+}
+function deteleteBook() {
+  let userRef = this.database.ref("users/" + userId);
+  userRef.remove();
+}
 function writeBookData(bookId, title, description, author, pages, read, link) {
   const database = firebase.database();
   const rootRef = database.ref("books");
-  rootRef.child(2).set({
+  rootRef.child(bookId).set({
     title: title,
     author: author,
     description: description,
@@ -29,18 +52,17 @@ function readOnce() {
   var userId = 1;
   var query = firebase
     .database()
-    .ref("books/2")
+    .ref("books/")
     .once("value");
-
   var result = query.then(function(snapshot) {
     console.log(snapshot.val());
   });
 }
 
 function readListener() {
-  var starCountRef = firebase.database().ref("books/" + bookId + "/starCount");
+  var starCountRef = firebase.database().ref("books/");
   starCountRef.on("value", function(snapshot) {
-    updateStarCount(postElement, snapshot.val());
+    console.log(snapshot.val());
   });
 }
 
