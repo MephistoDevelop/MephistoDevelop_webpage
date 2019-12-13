@@ -10,6 +10,7 @@
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/animationintro.js"></script>
     <script src="js/language.js"></script>
+    <script src="js/firebase.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <title>MephistoDevelop Site</title>
   </head>
@@ -19,7 +20,7 @@
       <!-- TODO: Add SDKs for Firebase products that you want to use
          https://firebase.google.com/docs/web/setup#available-libraries -->
       <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-database.js"></script>
       <!-- TODO: Add SDKs for Firebase products that you want to use
          https://firebase.google.com/docs/web/setup#available-libraries -->
     <script>
@@ -36,9 +37,8 @@
     // In itialize Firebase
     firebase.initializeApp(firebaseConfig);
 
-    const preObject = document.getElementById('objeto');
-    const dbRefObject = firebase.database().ref().child('objeto');
-    dbRefObject.on('value',snap => console.log(snap.val()));
+
+  // Get a reference to the database service
     </script>
     <nav class="navbar fixed-top navbar-light" id="navbar-main">
       <div class="ml-3 align-middle" id="flags">
