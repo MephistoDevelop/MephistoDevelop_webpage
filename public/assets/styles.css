@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  color: #fff;
+  color: #f4f3f3;
   font-family: Calibri, sans-serif;
   height: 100vh;
   margin-left: -4px;
@@ -14,30 +14,32 @@ body {
   background-color: #384e79;
   border: none;
   border-radius: 10px;
-  height: 10%;
+  height: 8%;
+  min-height: 40px;
   color: black;
   font-weight: bolder;
-  font-size: 28px;
-  width: 35%;
+  font-size: 16px;
+  width: 15%;
   box-shadow: 2px 3px 8px gray;
   min-width: 150px;
   color: white;
   border: 4px solid white !important;
   border-radius: 3px;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 #btnstart:hover {
-  border-radius: 50px;
   border-color: #384e79 !important;
-  transition: all 1s ease 0s;
+  transition: all 0.5s ease 0s;
+  background-color: #dfdfdf;
+  color: black;
 }
 #btnstart {
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-name: slideindos;
 }
 @keyframes slideindos {
   from {
-    margin-right: 150%;
+    opacity: 1px;
   }
 
   to {
@@ -126,8 +128,6 @@ body {
   transition-duration: 1s;
 }
 .btn-2:hover {
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
   -webkit-transition-timing-function: cubic-bezier(0.27, 1.02, 0.31, -0.36);
   transition-timing-function: cubic-bezier(0.27, 2.02, 0.31, -0.36);
 }
@@ -135,15 +135,15 @@ body {
   text-decoration: underline;
 }
 .center-e {
-  width: 99vw;
-  height: 98vh;
+  margin-top: 8%;
+  height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #232323;
-  margin: 0;
-  padding: 0;
+  color: whitesmoke !important;
+  background-color: #6c7b95;
+  min-height: 320px;
 }
 
 p {
@@ -180,7 +180,7 @@ p {
   text-align: right;
   padding: 0.6rem;
   position: fixed;
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-name: slideinlink;
 }
 @keyframes slideinlink {
@@ -205,13 +205,12 @@ p {
 }
 
 #navbar-main {
-  animation-duration: 3s;
-  animation-name: navbar;
+  padding-top: 15px;
   color: black;
   opacity: 0.8;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: bolder;
-  background-color: dimgray;
+  background-color: #b1bed5;
   margin: 0;
   color: whitesmoke !important;
   height: 50px;
@@ -220,16 +219,16 @@ p {
   transition: top 0.8s;
 }
 #navbar-main a {
-  color: whitesmoke;
-  font: 18px;
+  color: black;
+  font: 14px !important;
   font-weight: bolder;
 }
 #navbar-main a:hover {
   height: 100%;
   text-align: center;
   text-decoration: none;
-  transition: ease-in 1;
-  animation-duration: 3s;
+  transition: ease-in 0.5;
+  animation-duration: 0.5s;
   font-weight: bolder;
   font-size: 18px;
 }
@@ -245,4 +244,11 @@ p {
 #linkedinicon:hover {
   width: 40px;
   height: auto;
+}
+
+#txtmephisto {
+  text-decoration: underline;
+}
+#text {
+  margin-top: 4% !important;
 }
