@@ -11,6 +11,7 @@
     <script src="js/animationen.js"></script>
     <script src="js/language.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://kit.fontawesome.com/d08a51000b.js" crossorigin="anonymous"></script>
     <title>MephistoDevelop Site</title>
   </head>
   <body>
@@ -45,27 +46,38 @@
         <button class="btn-2"  id="btnenglish"></button>
       </div>
       <a class="buttonfx navbar-links" id="aboutme-text" href="#aboutme-section">About me</a>
-      <a class="buttonfx navbar-links" id="aboutme-text" href="views/about-me.html">Skills</a>
-      <a class="buttonfx navbar-links" id="aboutme-text" href="#">Contact</a>
-      <a class="buttonfx navbar-links" id="aboutme-text" href="#">Resume</a>
-      <a class="buttonfx navbar-links link" id="aboutme-text" href="#">Projects</a>
+      <a class="buttonfx navbar-links" id="aboutme-text" href="#skills-section">Skills</a>
+      <a class="buttonfx navbar-links" id="aboutme-text" href="#projects-section">Projects</a>
+      <a class="buttonfx navbar-links" id="aboutme-text" href="#contact-section">Contact</a>
+      <a class="buttonfx navbar-links link" id="aboutme-text" href="#">Resume</a>
     </nav>
 
     <div class="container">
+      <div id="top"></div>
       <div class="container m-0 p-0">
         <div class="center-e">
           <p class="ml4" id="text">Web Full-Stack Developer - Software Engineer </p>
           <p class="ml5" id="texto">Hello My name is<b> Cristian Ines (MephistoDevelop)</b>, i love create solutions to make the difference.</p>
-          <button class="button btn-2"  id="btnstart"  onclick="addfirebase()">More About me</button>
+          <a class="button btn-2"  id="btnstart" href="#aboutme-section">More About me</a>
         </div>
       </div>
-      <div class="w-100" id="separator"">ABOUT ME</div>
-      <div class="card content"id="aboutme-section">I'm the content for something new</div>
+      <div class="w-100" id="separator">ABOUT ME</div>
+      <div class="card content" id="aboutme-section">I'm the content for something new</div>
+
+      <div class="w-100" id="separator">SKILLS</div>
+      <div class="card content"id="skills-section">I'm the content for something new</div>
+
+      <div class="w-100" id="separator">PROJECTS</div>
+      <div class="card content"id="projects-section">I'm the content for something new</div>
+
+      <div class="w-100" id="separator">CONTACT</div>
+      <div class="card content"id="contact-section">I'm the content for something new</div>
 
       <div class="mylink" >
-          <a  target="_blank" href="https://www.linkedin.com/in/cristian-hernandez1992/"><img src="assets/img/linkedin.png" alt="Linkedin icon" class="btn-2" id="linkedinicon"></a>
-            <a target="_blank" href="https://github.com/MephistoDevelop"><img src="assets/img/github.png" class="btn-2" alt="github icon" id="githubicon"></a>
-            <a target="_blank" id="txtmephisto" class="btn-2 ml-2" href="https://github.com/MephistoDevelop">MephistoDevelop</a>
+        <a href="#head" id="backtop" onclick="gotop()"><i class="fas fa-arrow-up "></i></a>
+        <a  target="_blank" href="https://www.linkedin.com/in/cristian-hernandez1992/"><img src="assets/img/linkedin.png" alt="Linkedin icon" class="btn-2" id="linkedinicon"></a>
+        <a target="_blank" href="https://github.com/MephistoDevelop"><img src="assets/img/github.png" class="btn-2" alt="github icon" id="githubicon"></a>
+        <a target="_blank" id="txtmephisto" class="btn-2 ml-2" href="https://github.com/MephistoDevelop">MephistoDevelop</a>
       </div>
     </div>
   </body>
