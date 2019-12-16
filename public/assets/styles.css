@@ -1,6 +1,13 @@
 * {
   box-sizing: border-box;
 }
+
+.input-form::placeholder {
+  color: whitesmoke;
+  font-weight: bolder;
+  margin: 5px;
+  height: 10px;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -32,7 +39,7 @@ body {
   font-weight: bolder;
   font-size: 16px;
   width: 15%;
-  box-shadow: 2px 3px 8px gray;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   min-width: 150px;
   color: white;
   border: 4px solid white !important;
@@ -150,6 +157,11 @@ body {
 .btn-2 a:hover {
   text-decoration: underline;
 }
+
+.card {
+  background-color: #bfd8d5;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 .center-e {
   margin-top: 8%;
   height: 70vh;
@@ -160,7 +172,6 @@ body {
   color: whitesmoke !important;
   background-color: #6c7b95;
   min-height: 320px;
-
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -182,6 +193,7 @@ p {
   margin-top: 0%;
 }
 #githubicon {
+  z-index: 1;
   background-color: white;
   border-radius: 50px;
   border: 1px solid white;
@@ -193,6 +205,13 @@ p {
   bottom: 50px;
   margin-left: 180px;
   transition: 1s;
+}
+.input-form {
+  background-color: #6c7b95;
+  border: none;
+  margin: 5px 0;
+  color: white;
+  padding: 10px;
 }
 .footer {
   font-size: 10px;
@@ -253,7 +272,16 @@ p {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transition: top 0.8s;
 }
+#form-contact {
+  flex-direction: column;
+  margin: 3% 0;
+  width: 35%;
+}
 
+#form-text {
+  font-size: 12px;
+  font-weight: bold;
+}
 #navbar-main a {
   color: black;
   font: 14px !important;
