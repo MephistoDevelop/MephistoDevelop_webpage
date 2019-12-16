@@ -67,12 +67,13 @@ body {
   height: 20px;
   width: 32px;
   border: none;
+  max-width: 34px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #btnspanish:hover {
-  background-image: url(img/spanish.png);
   height: 26px;
-  width: 45px;
+  width: 38px;
+  background-image: url(img/spanish.png);
   border: none;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -82,11 +83,12 @@ body {
   width: 32px;
   border: none;
   background-size: cover;
+  max-width: 34px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #btnenglish:hover {
   height: 26px;
-  width: 45px;
+  width: 38px;
 }
 
 .btn-1 {
@@ -184,17 +186,13 @@ p {
   border-radius: 50px;
   border: 1px solid white;
 }
-#githubicon:hover {
-  width: 40px;
-  height: auto;
-}
 
 #backtop {
   font-size: 28px;
   position: absolute;
   bottom: 50px;
   margin-left: 180px;
-  transition: ease-in 1;
+  transition: 1s;
 }
 .mylink {
   /*position: absolute;*/
@@ -249,17 +247,14 @@ p {
   color: black;
   font: 14px !important;
   font-weight: bolder;
+
+  padding: 0 20px;
 }
 #navbar-main a:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
   text-decoration: none;
   transition: ease-in 0.5;
   animation-duration: 0.5s;
-  font-weight: bolder;
-  font-size: 16px;
-  padding: 0 20px;
-  color: white;
 }
 @keyframes navbar {
   from {
@@ -269,10 +264,6 @@ p {
   to {
     margin-bottom: 0%;
   }
-}
-#linkedinicon:hover {
-  width: 40px;
-  height: auto;
 }
 
 #txtmephisto {
@@ -306,7 +297,6 @@ p {
 
 .buttonfx:before {
   background: transparent; /* button default background color */
-  z-index: -2;
   transform: translate3D(0, 0, 0);
 }
 
@@ -338,19 +328,24 @@ p {
 
 @media (min-width: 500px) and (max-width: 991px) {
   .link {
-    margin-right: 10px;
+    margin-right: 0.2rem;
   }
   #text {
     font-size: 1.3rem;
   }
   #texto {
     font-size: 1.2rem;
-    min-width: 500px;
   }
   .center-e {
     margin-top: 15%;
   }
   .button {
     min-width: 170px;
+  }
+  #navbar-main {
+    min-width: 630px;
+  }
+  #navbar-main a {
+    font-size: 11px;
   }
 }
