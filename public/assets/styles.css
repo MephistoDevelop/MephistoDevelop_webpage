@@ -246,7 +246,7 @@ p {
   animation-duration: 0.5s;
   font-weight: bolder;
   font-size: 16px;
-  padding: 0 15px;
+  padding: 0 20px;
   color: white;
 }
 @keyframes navbar {
