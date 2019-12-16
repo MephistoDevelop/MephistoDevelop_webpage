@@ -10,6 +10,17 @@ body {
   margin-left: -4px;
   margin-bottom: -5px;
 }
+#aboutme-text {
+  color: black;
+  background: transparent;
+  position: relative;
+  border: none;
+  line-height: 2;
+  cursor: pointer;
+  text-decoration: none; /* remove underline if using A instead of BUTTON tag */
+  overflow: hidden;
+  transition: all 0.5s;
+}
 .button {
   background-color: #384e79;
   border: none;
@@ -124,7 +135,7 @@ body {
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(0.5px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.3s;
   transition-duration: 1s;
 }
 .btn-2:hover {
@@ -224,13 +235,14 @@ p {
   font-weight: bolder;
 }
 #navbar-main a:hover {
-  height: 100%;
   text-align: center;
   text-decoration: none;
   transition: ease-in 0.5;
   animation-duration: 0.5s;
   font-weight: bolder;
   font-size: 18px;
+  padding: 0 10px;
+  color: white;
 }
 @keyframes navbar {
   from {
@@ -251,4 +263,57 @@ p {
 }
 #text {
   margin-top: 4% !important;
+}
+
+.buttonfx {
+  background-color: #b1bed5;
+}
+
+.buttonfx:before,
+.buttonfx:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #6c7b95; /* onhover background color */
+  z-index: -1;
+  transform: translate3D(
+    -100%,
+    0,
+    0
+  ); /* move elements above button so they don't appear initially */
+  transition: all 0.5s;
+}
+
+.buttonfx:before {
+  background: transparent; /* button default background color */
+  z-index: -2;
+  transform: translate3D(0, 0, 0);
+}
+
+.buttonfx:hover {
+  color: white;
+}
+
+.buttonfx:hover:after {
+  transform: translate3D(0, 0, 0);
+  transition: all 0.5s;
+}
+
+@media (min-width: 641px) and (max-width: 991px) {
+  #text {
+    font-size: 1.3rem;
+  }
+  #texto {
+    font-size: 1.2rem;
+    min-width: 500px;
+  }
+  .center-e {
+    margin-top: 15%;
+  }
+  .button {
+    min-width: 170px;
+  }
 }
