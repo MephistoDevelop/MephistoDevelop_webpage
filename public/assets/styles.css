@@ -321,9 +321,9 @@ p {
 #aboutme-section {
 }
 
-#separator {
+.separator {
   margin-top: 20%;
-  margin-bottom: 10%;
+  margin-bottom: 2%;
   color: black;
   width: 100vw;
   height: 30px;
