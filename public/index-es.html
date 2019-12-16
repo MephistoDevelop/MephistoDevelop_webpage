@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-   <link rel="stylesheet" href="assets/styles.css"></link>
+    <link rel="stylesheet" href="assets/styles.css"></link>
     <script src="js/index.js"></script>
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/animationintro.js"></script>
     <script src="js/language.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://kit.fontawesome.com/d08a51000b.js" crossorigin="anonymous"></script>
     <title>MephistoDevelop Pagina Web</title>
   </head>
   <body>
@@ -41,25 +42,39 @@
         <button class="btn-2" id="btnspanish" ></button>
         <button class="btn-2"  id="btnenglish"   onclick="window.location ='index.html'"></button>
       </div>
-      <a class="buttonfx navbar-links" id="aboutme-text" href="#">Sobre mi</a>
-      <a class="buttonfx navbar-links" id="aboutme-text" href="#">Habilidades</a>
-      <a class="buttonfx navbar-links" id="aboutme-text" href="#">Contacto</a>
-      <a class="buttonfx navbar-links" id="aboutme-text" href="#">Curriculum</a>
-      <a class="buttonfx navbar-links link" id="aboutme-text" href="#">Projectos</a>
+      <a class="buttonfx navbar-links" id="aboutme-text" href="#aboutme-section">Sobre mi</a>
+      <a class="buttonfx navbar-links" id="aboutme-text" href="#skills-section">Habilidades</a>
+      <a class="buttonfx navbar-links" id="aboutme-text" href="#projects-section">Projectos</a>
+      <a class="buttonfx navbar-links" id="aboutme-text" href="#contact-section">Contacto</a>
+      <a class="buttonfx navbar-links link" id="aboutme-text" href="#">Curriculum</a>
     </nav>
+
     <div class="container">
-    <div class="container m-0 p-0">
-    <div class="center-e">
-        <p class="ml2" id="text">Desarrollador Web Full-Stack - Ingeniero de Software </p>
-        <p class="ml3" id="texto">Hola mi nombre es <b> Cristian Ines (MephistoDevelop)</b>, me encanta crear soluciones para hacer la diferencia.</p>
-        <button class="button btn-2"  id="btnstart">Mas sobre mi</button>
-    </div>
-    </div>
-    <div class="w-100">Helo  word</div>
+      <div id="top"></div>
+      <div class="container m-0 p-0">
+          <div class="center-e">
+            <p class="ml2" id="text">Desarrollador Web Full-Stack - Ingeniero de Software </p>
+            <p class="ml3" id="texto">Hola mi nombre es <b> Cristian Ines (MephistoDevelop)</b>, me encanta crear soluciones para hacer la diferencia.</p>
+            <button class="button btn-2"  id="btnstart">Mas sobre mi</button>
+          </div>
+      </div>
+      <div class="w-100 separator" id="aboutme-section">SOBRE MIi</div>
+      <div class="card content" >I'm the content for something new</div>
+
+      <div class="w-100 separator" id="skills-section">HABILIDADES</div>
+      <div class="card content">I'm the content for something new</div>
+
+      <div class="w-100 separator" id="projects-section">PROJECTOS</div>
+      <div class="card content">I'm the content for something new</div>
+
+      <div class="w-100 separator" id="contact-section">CONTACTO</div>
+      <div class="card content">I'm the content for something new</div>
+
       <div class="mylink">
-            <a target="_blank" href="https://www.linkedin.com/in/cristian-hernandez1992/"><img src="assets/img/linkedin.png" alt="Linkedin icon" class="btn-2" id="linkedinicon"></a>
-            <a target="_blank" href="https://github.com/MephistoDevelop"><img src="assets/img/github.png" class="btn-2" alt="github icon" id="githubicon"></a>
-            <a target="_blank" target="_blank" id="txtmephisto" class="btn-2 ml-2" href="https://github.com/MephistoDevelop">MephistoDevelop</a target="_blank">
+          <a href="#head" id="backtop" onclick="gotop()"><i class="fas fa-arrow-up "></i></a>
+          <a target="_blank" href="https://www.linkedin.com/in/cristian-hernandez1992/"><img src="assets/img/linkedin.png" alt="Linkedin icon" class="btn-2" id="linkedinicon"></a>
+          <a target="_blank" href="https://github.com/MephistoDevelop"><img src="assets/img/github.png" class="btn-2" alt="github icon" id="githubicon"></a>
+          <a target="_blank" target="_blank" id="txtmephisto" class="btn-2 ml-2" href="https://github.com/MephistoDevelop">MephistoDevelop</a target="_blank">
       </div>
     </div>
   </body>
