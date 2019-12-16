@@ -2,6 +2,7 @@ window.onload = function() {
   this.animate_text3();
   this.animate_text4();
 };
+
 function animate_text3() {
   var textWrapper3 = document.querySelector(".ml4");
 

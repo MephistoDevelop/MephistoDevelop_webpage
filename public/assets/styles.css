@@ -146,7 +146,7 @@ body {
 }
 .center-e {
   margin-top: 8%;
-  height: 50vh;
+  height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -154,6 +154,8 @@ body {
   color: whitesmoke !important;
   background-color: #6c7b95;
   min-height: 320px;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 p {
@@ -237,13 +239,14 @@ p {
   font-weight: bolder;
 }
 #navbar-main a:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
   text-decoration: none;
   transition: ease-in 0.5;
   animation-duration: 0.5s;
   font-weight: bolder;
-  font-size: 18px;
-  padding: 0 10px;
+  font-size: 16px;
+  padding: 0 15px;
   color: white;
 }
 @keyframes navbar {
@@ -304,7 +307,7 @@ p {
   transition: all 0.5s;
 }
 
-@media (min-width: 641px) and (max-width: 991px) {
+@media (min-width: 500px) and (max-width: 991px) {
   .link {
     margin-right: 10px;
   }
