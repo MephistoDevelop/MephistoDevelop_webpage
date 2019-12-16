@@ -17,7 +17,6 @@ body {
   border: none;
   line-height: 2;
   cursor: pointer;
-  text-decoration: none; /* remove underline if using A instead of BUTTON tag */
   overflow: hidden;
   transition: all 0.5s;
 }
@@ -215,8 +214,11 @@ p {
   color: royalblue;
 }
 
+.link {
+  margin-right: 100px;
+}
+
 #navbar-main {
-  padding-top: 15px;
   color: black;
   opacity: 0.8;
   font-size: 14px;
@@ -303,6 +305,9 @@ p {
 }
 
 @media (min-width: 641px) and (max-width: 991px) {
+  .link {
+    margin-right: 10px;
+  }
   #text {
     font-size: 1.3rem;
   }
