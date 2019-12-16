@@ -194,6 +194,16 @@ p {
   margin-left: 180px;
   transition: 1s;
 }
+.footer {
+  font-size: 10px;
+  opacity: 0.6;
+  height: 50px;
+  background-color: #b1bed5;
+  margin-top: 5%;
+  color: black;
+  font-weight: bolder;
+}
+
 .mylink {
   /*position: absolute;*/
   bottom: 0;
@@ -243,11 +253,11 @@ p {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transition: top 0.8s;
 }
+
 #navbar-main a {
   color: black;
   font: 14px !important;
   font-weight: bolder;
-
   padding: 0 20px;
 }
 #navbar-main a:hover {
