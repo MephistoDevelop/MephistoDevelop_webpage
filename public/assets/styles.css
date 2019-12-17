@@ -214,6 +214,7 @@ p {
   padding: 10px;
 }
 .footer {
+  z-index: -100;
   font-size: 10px;
   opacity: 0.6;
   height: 50px;
@@ -233,6 +234,7 @@ p {
   position: fixed;
   animation-duration: 2s;
   animation-name: slideinlink;
+  z-index: 100;
 }
 @keyframes slideinlink {
   from {
@@ -367,6 +369,9 @@ p {
 @media (min-width: 500px) and (max-width: 991px) {
   .link {
     margin-right: 0.2rem;
+  }
+  #form-contact {
+    width: 80%;
   }
   #text {
     font-size: 1.3rem;
