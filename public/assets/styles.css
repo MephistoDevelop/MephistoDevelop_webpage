@@ -281,8 +281,9 @@ p {
 }
 
 #form-text {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bold;
+  max-width: 400px;
 }
 #navbar-main a {
   color: black;
