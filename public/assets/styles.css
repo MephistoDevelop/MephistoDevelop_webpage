@@ -238,7 +238,7 @@ p {
 }
 @keyframes slideinlink {
   from {
-    margin-left: 110%;
+    margin-left: 150%;
   }
 
   to {
@@ -326,10 +326,11 @@ p {
   top: 0;
   right: 0;
   bottom: 0;
-  background: #6c7b95; /* onhover background color */
+  background: #6c7b95;
+  /* onhover background color */
   z-index: -1;
   transform: translate3D(
-    -100%,
+    -110%,
     0,
     0
   ); /* move elements above button so they don't appear initially */
@@ -349,9 +350,6 @@ p {
   transform: translate3D(0, 0, 0);
   transition: all 0.5s;
 }
-#aboutme-section {
-}
-
 .separator {
   margin-top: 20%;
   margin-bottom: 2%;
@@ -379,6 +377,7 @@ p {
   }
   #texto {
     font-size: 1.2rem;
+    min-width: 480px;
   }
   .center-e {
     margin-top: 15%;
