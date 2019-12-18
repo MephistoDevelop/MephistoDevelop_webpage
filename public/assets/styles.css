@@ -1,12 +1,14 @@
 * {
   box-sizing: border-box;
 }
+#card-contact {
+  min-height: 400px;
+}
 
 .input-form::placeholder {
   color: whitesmoke;
   font-weight: bolder;
   margin: 5px;
-  height: 10px;
 }
 html {
   scroll-behavior: smooth;
@@ -278,6 +280,7 @@ p {
   flex-direction: column;
   margin: 3% 0;
   width: 35%;
+  height: auto !important;
 }
 
 #form-text {
@@ -364,7 +367,9 @@ p {
   padding: 15px;
   height: 100%;
 }
-
+#txtmessage {
+  min-height: 100px;
+}
 @media (min-width: 500px) and (max-width: 991px) {
   .link {
     margin-right: 0.2rem;
