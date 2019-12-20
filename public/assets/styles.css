@@ -1,6 +1,12 @@
 * {
   box-sizing: border-box;
 }
+
+#aboutme-text {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 20px;
+}
 #card-contact {
   min-height: 400px;
 }
@@ -317,6 +323,28 @@ p {
   margin-top: 4% !important;
 }
 
+#photo-me {
+  width: 35vw;
+  height: auto;
+  background-size: cover;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  animation-duration: 0.5s;
+  animation-name: slideinphoto;
+  z-index: 100;
+}
+@keyframes slideinphoto {
+  from {
+    margin-left: 70%;
+    opacity: 0;
+  }
+
+  to {
+    margin-left: 0%;
+    opacity: 1px;
+  }
+}
 .buttonfx {
   background-color: #b1bed5;
 }
