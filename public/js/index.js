@@ -1,21 +1,29 @@
 function gotop() {
-  var body = $("html, body");
-  body.stop().animate({ scrollTop: 0 }, 500, "swing", function() {});
+  var body = $('html, body');
+  body.stop().animate({ scrollTop: 0 }, 700, 'swing', function() {});
 }
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
 
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
 function changeDefOver(e) {
-  e.target.classList.toggle("opacity-toggle");
+  e.target.classList.toggle('opacity-toggle');
 }
 var prevScrollpos = 0;
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
 
   if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar-main").style.top = "0px";
-    document.getElementById("backtop").style.marginLeft = "230px";
+    document.getElementById('navbar-main').style.top = '0px';
+    document.getElementById('backtop').style.marginLeft = '270px';
   } else {
-    document.getElementById("navbar-main").style.top = "-50px";
-    document.getElementById("backtop").style.marginLeft = "180px";
+    document.getElementById('navbar-main').style.top = '-50px';
+    document.getElementById('backtop').style.marginLeft = '200px';
   }
   prevScrollpos = currentScrollPos;
 };
