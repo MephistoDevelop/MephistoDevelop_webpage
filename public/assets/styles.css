@@ -58,9 +58,8 @@ body {
   padding-top: 3px;
 }
 #btnstart:hover {
-  color: #633a82;
   transition: all 0.5s ease 0s;
-  color: #633a82;
+  color: #384e79;
   text-decoration: none;
   text-align: center;
 }
@@ -193,7 +192,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #633a82;
+  color: #384e79;
   min-height: 380px;
 }
 
@@ -371,7 +370,7 @@ p {
   top: 0;
   right: 0;
   bottom: 0;
-  background: #633a82;
+  background: #384e79;
   /* onhover background color */
   z-index: -1;
   transform: translate3D(
