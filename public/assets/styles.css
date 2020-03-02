@@ -1,6 +1,11 @@
 * {
   box-sizing: border-box;
 }
+.container {
+  margin: 0;
+  width: 100% !important;
+  max-width: 1200px;
+}
 
 @keyframes load {
   from {
@@ -407,7 +412,7 @@ p {
 #form-contact {
   flex-direction: column;
   margin: 3% 0;
-  width: 50%;
+  width: 50% !important;
   height: auto !important;
 }
 
@@ -513,7 +518,7 @@ p {
   margin-top: 5%;
   margin-bottom: 2%;
   color: #f1fcfc;
-  width: 100vw;
+  width: 100%;
   height: 30px;
   background-color: rgba(52, 152, 219, 1) !important;
   font-weight: bolder;
@@ -602,7 +607,12 @@ p {
   /*  animation: fadein 5s; */
   -webkit-animation: fadein 2s; /* Safari and Chrome */
 }
-
+#skeleton {
+  display: flex;
+  /* width: 1000px; */
+  flex-direction: column;
+  align-items: center;
+}
 @media (min-width: 500px) and (max-width: 991px) {
   #photo-me {
     width: 100%;
@@ -654,10 +664,62 @@ p {
     padding-bottom: 20px !important;
   }
   #photo-me-container {
-    height: 80vh;
+    height: 60vh;
     display: contents;
   }
   #photo-me {
-    margin-top: 15%;
+    margin-top: 5%;
+  }
+  .mock-text {
+    font-size: 14px;
+  }
+  .bar {
+    font-size: 10px !important;
+  }
+  #skillset-header {
+    padding: 0 5px;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 499px) {
+  #form-contact {
+    width: 100% !important;
+  }
+  #aboutme-description {
+    font-size: 12px !important;
+    margin: 0px;
+  }
+  #buttons-hide {
+    padding-bottom: 15px !important;
+  }
+  .mock-text {
+    font-size: 13px;
+  }
+  #photo-me {
+    height: 100%;
+    max-height: 350px;
+    width: 100%;
+    min-width: 150px;
+    margin-bottom: 5%;
+  }
+  #skills-container {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+  }
+  #skillset-container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .skillset-container-main {
+    min-width: 200px !important;
+    max-width: 500px;
+    margin-top: 25%;
+  }
+  #texto {
+    font-size: 14px;
+    padding: 10px 15%;
   }
 }

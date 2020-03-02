@@ -22,7 +22,7 @@ window.onscroll = function() {
     document.getElementById('navbar-main').style.top = '0px';
     document.getElementById('backtop').style.marginLeft = '270px';
   } else {
-    document.getElementById('navbar-main').style.top = '-50px';
+    document.getElementById('navbar-main').style.top = '-100px';
     document.getElementById('backtop').style.marginLeft = '200px';
   }
   prevScrollpos = currentScrollPos;
