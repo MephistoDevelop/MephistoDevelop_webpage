@@ -1,6 +1,6 @@
 function gotop() {
   var body = $('html, body');
-  body.stop().animate({ scrollTop: 0 }, 700, 'swing', function() {});
+  body.stop().animate({ scrollTop: 0 }, 800, 'swing', function() {});
 }
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener('click', function(e) {
@@ -18,7 +18,7 @@ var prevScrollpos = 0;
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
 
-  if (prevScrollpos > currentScrollPos) {
+  if (prevScrollpos > currentScrollPos && currentScrollPos <= 10) {
     document.getElementById('navbar-main').style.top = '0px';
     document.getElementById('backtop').style.marginLeft = '270px';
   } else {
