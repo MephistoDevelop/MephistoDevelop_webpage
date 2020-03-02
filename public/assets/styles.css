@@ -129,6 +129,17 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+#img-socialbook {
+  width: 70%;
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+#img-socialbook:hover {
+  opacity: 0.6;
+}
 .button {
   background-color: rgba(52, 152, 219, 1);
   border: none;
@@ -141,10 +152,18 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   min-width: 150px;
   color: white;
-  border: 4px solid white !important;
+  border: 4px solid rgba(0, 0, 255, 0.3) !important;
   border-radius: 3px;
   margin-top: 5%;
   padding-top: 3px;
+}
+.button-mock {
+  padding: 5px;
+  margin: 5px 5px;
+  height: 100%;
+}
+.button-mock:hover {
+  transform: scale(1.1);
 }
 #btnstart:hover {
   transition: all 0.5s ease 0s;
@@ -374,6 +393,7 @@ p {
 }
 
 #navbar-main {
+  padding: 10px 10% !important;
   font-size: 14px;
   font-weight: bolder;
   background-color: #2980b9;
@@ -387,7 +407,7 @@ p {
 #form-contact {
   flex-direction: column;
   margin: 3% 0;
-  width: 35%;
+  width: 50%;
   height: auto !important;
 }
 
@@ -505,13 +525,100 @@ p {
 #txtmessage {
   min-height: 100px;
 }
+#mock1-container {
+  display: flex;
+  align-items: center;
+  border: none !important;
+}
+.mock-title {
+  color: #2980b9;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.mock-text {
+  color: rgba(52, 152, 219, 1);
+  font-size: 18px;
+  font-weight: 600;
+  margin: 10px;
+}
+#img-battleship {
+  margin-top: 5%;
+}
+#buttons-hide {
+  display: flex;
+  align-items: initial;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 2%;
+  padding-bottom: 2%;
+  border-bottom: 5px solid blue;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+    top: 100px;
+    left: 100%;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadein {
+  /* Firefox */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    position: relative;
+    opacity: 0;
+    top: -100%;
+    left: -100%;
+  }
+  to {
+    opacity: 1;
+    top: 0;
+    left: 0;
+  }
+}
+@-o-keyframes fadein {
+  /* Opera */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+#texto {
+  font-size: 1.2rem;
+  min-width: 480px;
+  /*  animation: fadein 5s; */
+  -webkit-animation: fadein 2s; /* Safari and Chrome */
+}
+
 @media (min-width: 500px) and (max-width: 991px) {
+  #photo-me {
+    width: 100%;
+    height: 50%;
+  }
+  #skillset-container {
+    margin: 0;
+    padding: 0;
+  }
+  #aboutme-description {
+    font-size: 0.9rem;
+  }
   .link {
     margin-right: 0.2rem;
   }
-  #form-contact {
-    width: 80%;
-  }
+
   #text {
     font-size: 1.3rem;
   }
@@ -519,51 +626,9 @@ p {
     font-size: 1.2rem;
     min-width: 480px;
     /*  animation: fadein 5s; */
-
     -webkit-animation: fadein 5s; /* Safari and Chrome */
   }
-  @keyframes fadein {
-    from {
-      opacity: 0;
-      top: 100px;
-      left: 100%;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  @-moz-keyframes fadein {
-    /* Firefox */
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  @-webkit-keyframes fadein {
-    /* Safari and Chrome */
-    from {
-      position: relative;
-      opacity: 0;
-      top: -100%;
-      left: -100%;
-    }
-    to {
-      opacity: 1;
-      top: 0;
-      left: 0;
-    }
-  }
-  @-o-keyframes fadein {
-    /* Opera */
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
+
   .center-e {
     margin-top: 15%;
   }
@@ -575,5 +640,24 @@ p {
   }
   #navbar-main a {
     font-size: 11px;
+  }
+  #aboutme-text {
+    padding: 0 !important;
+  }
+  #navbar-main {
+    padding: 0 20px !important;
+  }
+  #form-contact {
+    width: 100%;
+  }
+  #buttons-hide {
+    padding-bottom: 20px !important;
+  }
+  #photo-me-container {
+    height: 80vh;
+    display: contents;
+  }
+  #photo-me {
+    margin-top: 15%;
   }
 }
