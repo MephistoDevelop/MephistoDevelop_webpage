@@ -1,4 +1,4 @@
-[![Is MephistoDevelop available for hire?](http://hireable.me/<username>)](http://hireable.me/p/<username>)
+[![Is MephistoDevelop available for hire?](http://hireable.me/MephistoDevelop)](http://hireable.me/p/MephistoDevelop)
 
 # MephistoDevelop - Cristian Ines - Portfolio
 
