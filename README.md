@@ -1,20 +1,14 @@
-
-Simple repository to save some of my experience like Full-Stack Web Developer
-
-**Made with :**
--HTML
--CSS
--JavaScript
--Firebase
-
-
-
-
-
-
 # MephistoDevelop - Cristian Ines - Portfolio
 
 > Personal Web page from Cristian Ines Hernandez A. - MephistoDevelop to save our contact info and oprojects portfolio
+
+
+## Built with:
+
+- HTML
+- CSS
+- JavaScript
+- Firebase
 
 ## Content
 
