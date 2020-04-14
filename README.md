@@ -1,6 +1,6 @@
 # MephistoDevelop - Cristian Ines - Portfolio
 
-> Personal Web page from Cristian Ines Hernandez A. - MephistoDevelop to save our contact info and oprojects portfolio
+> Personal Web page from Cristian Ines Hernandez A. - MephistoDevelop to save our contact info and projects portfolio
 
 
 ## Built with:
@@ -13,7 +13,7 @@
 ## Content
 
 - index.html with HTML5 structure
-- README.md file with markdown languaje
+- README.md file with markdown language
 - .stickler file with the basic config
 - assets folder
   -style.css file to styles properties
@@ -28,11 +28,11 @@
 
 ## Getting Started
 
-To start to using this project you will need to clone or download tis repository to your localhost and open on your server the index.html file.
+To start to using this project you will need to clone or download this repository to your localhost and open on your server the index.html file.
 
 ### Deployment
 
-This basicaly only a web page with only one HTML file you will only need to open on your browser the index.html file.
+This basically only a web page with only one HTML file you will only need to open on your browser the index.html file.
 
 ## Author
 
@@ -44,13 +44,13 @@ This basicaly only a web page with only one HTML file you will only need to open
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!
+Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](issues/).
 
 ## Show your support
 
-Give a ⭐️ if you like this project!
+Give an ⭐️ if you like this project!
 
 ## 📝 License
 
