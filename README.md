@@ -27,12 +27,11 @@
 
 
 ## Getting Started
-
-To start to using this project you will need to clone or download this repository to your localhost and open on your server the index.html file.
+To start to using this project you will need to clone or download this repository to your localhost and then open the index.html file on your server.
 
 ### Deployment
 
-This basically only a web page with only one HTML file you will only need to open on your browser the index.html file.
+This site currently only contains one HTML file, so you only need to open the index.html file on your browser.
 
 ## Author
 
