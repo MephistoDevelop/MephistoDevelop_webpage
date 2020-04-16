@@ -2,6 +2,9 @@
 
 > Personal Web page from Cristian Ines Hernandez A. - MephistoDevelop to save our contact info and projects portfolio
 
+## ScreenShot
+
+![screenshot](./portfolio.gif)
 
 ## Built with:
 
