@@ -1,200 +1,549 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta property="og:title" content="MephistoDevelop Portfolio />
-    <meta property="og:description" content="Cristian Ines (MephistoDevelop) - Full Stack Web Developer Personal Portfolio" />
-    <meta property="og:image" content="https://avatars0.githubusercontent.com/u/19605034?s=460&v=4" />
-    <meta property="og:url" content="https://mephistodevelop.github.io/" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@MephistoDevelop" />
-    <meta name="twitter:creator" content="@MephistoDevelop" />
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/styles.css"></link>
-    <script src="js/index.js"></script>
-    <script src="js/jquery-3.4.1.js"></script>
-    <script src="js/animationen.js"></script>
-    <script src="js/language.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-    <script src="https://kit.fontawesome.com/d08a51000b.js" crossorigin="anonymous"></script>
-    <title>MephistoDevelop Site</title>
-  </head>
-  <body>
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-app.js"></script>
-      <!-- TODO: Add SDKs for Firebase products that you want to use
-         https://firebase.google.com/docs/web/setup#available-libraries -->
-      <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-database.js"></script>
-      <!-- TODO: Add SDKs for Firebase products that you want to use
-         https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script>
-  // Your web app's Firebase configuration
-      var firebaseConfig = {
-      apiKey: "AIzaSyAeAmZYNYhxI_2M394CjfqAXAQ_2QCIQGs",
-      authDomain: "mephistodevelop.firebaseapp.com",
-      databaseURL: "https://mephistodevelop.firebaseio.com",
-      projectId: "mephistodevelop",
-      storageBucket: "mephistodevelop.appspot.com",
-      messagingSenderId: "201559418194",
-      appId: "1:201559418194:web:23edb5a8736080d225468b"
-    };
-    // In itialize Firebase
-    firebase.initializeApp(firebaseConfig);
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta property="og:title" content="MephistoDevelop Portfolio />
+    <meta property=" og:description"
+    content="Cristian Ines (MephistoDevelop) - Full Stack Web Developer Personal Portfolio" />
+  <meta property="og:image" content="https://avatars0.githubusercontent.com/u/19605034?s=460&v=4" />
+  <meta property="og:url" content="https://mephistodevelop.github.io/" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@MephistoDevelop" />
+  <meta name="twitter:creator" content="@MephistoDevelop" />
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/styles.css">
+  </link>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700"
+    rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="./lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="./lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="./lib/animate/animate.min.css" rel="stylesheet">
+  <link href="./lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="./lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="./lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
 
-  // Get a reference to the database service
-    </script>
-        <nav class="navbar fixed-top navbar-light m-0 p-0" id="navbar-main">
-          <!-- <div class="ml-3 align-middle" id="flags">
-            <button onclick="window.location ='index-es.html'"  id="btnspanish"  ></button>
-            <button  id="btnenglish"></button>
-          </div> -->
-          <a class="buttonfx navbar-links" id="aboutme-text" href="#aboutme-section">About me</a>
-          <a class="buttonfx navbar-links" id="aboutme-text" href="#skills-section">Skills</a>
-          <a class="buttonfx navbar-links" id="aboutme-text" href="#projects-section">Projects</a>
-          <a class="buttonfx navbar-links" id="aboutme-text" href="#contact-section">Contact</a>
-          <a class="buttonfx navbar-links link" id="aboutme-text" href="#">Resume</a>
-        </nav>
-        <div id="skeleton">
-          <div id="main-container" class="container w-100">
-            <div class="container m-0 p-0">
-              <div class="center-e">
-                <!-- <p class="ml4" id="text">Web Full-Stack Developer - Software Engineer </p> -->
-                <p class="ml5" id="texto">“Hi, I’m Cristian a software engineer, student from microverse school from remote software developer, passionate by making life easier through new web technologies using a maintainable and clean code”</p>
-                <a class="button btn-2"  id="btnstart" href="#aboutme-section">More About me</a>
-              </div>
-            </div>
-            <div class="w-100 separator" id="skills-section">SKILLS</div>
-            <div class="content">
-              <div class="d-flex" id="skills-container">
-                <div id="photo-me-container" class="col">
-                  <img src="assets/img/me.jpg" id="photo-me">
-                </div>
-                <div class="skillset-container-main col-6">
-                  <div class="container" id="skillset-container">
-                    <h1 id="skillset-header">Skill Set</h1>
-                    <div class="bar front expert" data-skill="HTML"></div>
-                    <div class="bar front expert" data-skill="CSS"></div>
-                    <div class="bar front expert" data-skill="JavaScript"></div>
-                    <div class="bar learning" data-skill="C#"></div>
-                    <div class="bar front advanced" data-skill="Ruby"></div>
-                    <div class="bar front advanced" data-skill="Ruby on Rails"></div>
-                    <div class="bar front advanced" data-skill="React.JS"></div>
-                    <div class="bar back intermediate" data-skill="Node.Js"></div>
-                    <div class="bar front expert" data-skill="TDD"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="w-100 separator" id="projects-section">PROJECTS</div>
-            <div class="content">
-              <div id="mock1-container" class="card col">
-              <img src="assets/img/mock3.jpg" id="img-socialbook">
-              <div class="mock-title">SocialBook Blog Page</div>
-              <div class="mock-text">Ruby on Rails / Hml / CSS / OmniAuth / Heroku</div>
-              <div id="buttons-hide">
-                <form action="https://github.com/MephistoDevelop/SocialBook" target="_blank">
-                  <button class="button button-mock" ><img src="assets/img/github.png" class="btn-2" alt="github icon" id="githubicon"> GitHub</button>
-                </form>
-              <form action="https://socialbook2019.herokuapp.com" target="_blank">
-                <button class="button button-mock" >Live View</button>
-              </form>
-              </div>
-              </div>
-            </div>
-            <div class="content">
-              <div id="mock1-container" class="card col">
-              <img src="assets/img/mock.png" id="img-battleship">
-              <div class="mock-title">Weather Aplication Page</div>
-              <div class="mock-text"> Hml / CSS /JavaScript / WebPack / GitPages</div>
-              <div id="buttons-hide">
-                <form action="https://github.com/MephistoDevelop/WeatherApp" target="_blank">
-                  <button class="button button-mock" ><img src="assets/img/github.png" class="btn-2" alt="github icon" id="githubicon"> GitHub</button>
-                </form>
-              <form action="https://mephistodevelop.github.io/WeatherApp/" target="_blank">
-                <button class="button button-mock" >Live View</button>
-              </form>
-              </div>
-              </div>
-            </div>
-            <div class="content">
-              <div id="mock1-container" class="card col">
-              <img src="assets/img/mock4.png" id="img-battleship">
-              <div class="mock-title">React Calculator</div>
-              <div class="mock-text"> Hml / CSS / JavaScript / REACT / HEROKU </div>
-              <div id="buttons-hide">
-                <form action="https://github.com/MephistoDevelop/react_calculator" target="_blank">
-                  <button class="button button-mock" ><img src="assets/img/github.png" class="btn-2" alt="github icon" id="githubicon"> GitHub</button>
-                </form>
-              <form action="https://react-calculator2020.herokuapp.com/" target="_blank">
-                <button class="button button-mock" >Live View</button>
-              </form>
-              </div>
-              </div>
-            </div>
-            <div class="content">
-              <div id="mock1-container" class="card col">
-              <img src="assets/img/mock2.png" id="img-battleship">
-              <div class="mock-title">BattleShip Game Page</div>
-              <div class="mock-text"> Hml / CSS / JavaScript / WEBPACK / TDD / JEST </div>
-              <div id="buttons-hide">
-                <form action="https://github.com/MephistoDevelop/battleship" target="_blank">
-                  <button class="button button-mock" ><img src="assets/img/github.png" class="btn-2" alt="github icon" id="githubicon"> GitHub</button>
-                </form>
-              <form action="https://mephistodevelop.github.io/battleship/" target="_blank">
-                <button class="button button-mock" >Live View</button>
-              </form>
-              </div>
-              </div>
-            </div>
+  <script src="js/index.js"></script>
+  <script src="js/jquery-3.4.1.js"></script>
+  <script src="js/animationen.js"></script>
+  <script src="js/language.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <script src="https://kit.fontawesome.com/d08a51000b.js" crossorigin="anonymous"></script>
+  <title>MephistoDevelop Site</title>
+</head>
 
-            <div class="content">
-              <div id="mock1-container" class="card col">
-              <img src="assets/img/mockup5.png" id="img-battleship">
-              <div class="mock-title">To-Do Task Manager</div>
-              <div class="mock-text"> Hml / CSS / JavaScript / WEBPACK  </div>
-              <div id="buttons-hide">
-                <form action="https://github.com/MephistoDevelop/ToDo-List" target="_blank">
-                  <button class="button button-mock" ><img src="assets/img/github.png" class="btn-2" alt="github icon" id="githubicon"> GitHub</button>
-                </form>
-              <form action="https://mephistodevelop.github.io/ToDo-List/" target="_blank">
-                <button class="button button-mock" >Live View</button>
-              </form>
-              </div>
-              </div>
-            </div>
+<body>
 
-            <div class="w-100 separator" id="aboutme-section">ABOUT ME</div>
-            <div class="content" id="aboutme-description" >
-              Graduated from Engineer of Computer Systems passionate for Develelopment and Electronic from Jalisco,Mexico.<br><br>
-              Full time Student on Microverse like remote Software Developer.<br><br>
-              I love to create solutions that helps to people to transform their ideas into reality, i specalized on create solutions to individuals and small-bussines
-               an Professional Software Enginner at your fingertips trough clean and maintanable code with industry sandars and best coding practices.
-            </div>
-            <div class="w-100 separator" id="contact-section">CONTACT</div>
-            <div class="card container d-flex align-items-center" id="card-contact">
-              <div class="container d-flex justify-content-center col" id="form-contact">
-                <p class="text-left" id="form-text">Do you have any question or do you want<br> to work togheter ? </p>
-                <input type="text" class="input-form" placeholder="Name">
-                <input type="text" class="input-form" placeholder="Your Email">
-                <textarea placeholder="Your Message" id="txtmessage" class="input-form"></textarea>
-                <button id="btnstart" class="btn-2 button">SUBMIT</button>
-              </div>
-            </div>
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container-fluid">
+      <div id="logo" class="pull-left">
+        <h1><a href="#about" class="scrollto">MephistoDevelop</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="#intro"><img src="img/logo.png" alt="" title="" /></a>-->
+      </div>
 
-            <div class="mylink" >
-              <a href="#head" id="backtop" onclick="gotop()"><i class="fas fa-arrow-up "></i></a>
-              <a  target="_blank" href="https://www.facebook.com/Mephisto1992"><img src="assets/img/facebook.png" alt="Facebook icon" class="btn-2" id="fbicon"></a>
-              <a  target="_blank" href="https://www.linkedin.com/in/cristian-hernandez1992/"><img src="assets/img/linkedin.png" alt="Linkedin icon" class="btn-2" id="linkedinicon"></a>
-              <a target="_blank" href="https://github.com/MephistoDevelop"><img src="assets/img/github.png" class="btn-2" alt="github icon" id="githubicon"></a>
-              <a target="_blank" id="txtmephisto" class="btn-2 ml-2" href="https://github.com/MephistoDevelop">MephistoDevelop</a>
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li><a href="#intro">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#portfolio">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact">Resume</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro">
+    <div class="intro-container">
+      <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
+
+        <ol class="carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <div class="carousel-item active"
+            style="background-image: url('./assets/img/inesfinal.png'); background-size:auto; background-position-x: 750px; background-position-y: 80px;">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="ml-5 pl-5">Remote Full-Stack Web Developer</h2>
+                <p class="ml-5 pl-5 text-align-left">Hi, I'm Cristian, a software engineer and student of Microverse, an
+                  online
+                  school for remote
+                  full-stack development that uses pair programming and agile methodologies to teach Ruby, Rails, React,
+                  and more.
+                </p>
+                <a href="#about" class="btn-get-started scrollto">More About me</a>
+              </div>
             </div>
           </div>
+
+          <div class="carousel-item"
+            style="background-image: url('./assets/img/inesfinal.png'); background-size:auto; background-position-x: 750px; background-position-y: 80px;">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="ml-5 pl-5">Developer With Best Code Practices </h2>
+                <p class="ml-5 pl-5  text-align-left"> I'm passionate about making life easier via new web technologies
+                  and
+                  clean, maintainable
+                  code, and I love to use logic and problem-solving skills along with patience and attention to detail
+                  in order to achieve those goals.</p>
+                <a href="#featured-services" class="btn-get-started scrollto">Get Started</a>
+              </div>
+            </div>
+          </div>
+
         </div>
 
-        <div class="footer ml-1 mr-1 d-flex justify-content-center pt-4">MephistoDevelop ® 2019</div>
-  </body>
+        <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon ion-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+
+        <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon ion-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+
+      </div>
+    </div>
+  </section><!-- #intro -->
+
+  <main id="main">
+
+    <!--==========================
+      About Us Section
+    ============================-->
+    <section id="about">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>About Me</h3>
+          <p>Graduated from Engineer of Computer Systems passionate for Develelopment and Electronic from
+            Jalisco,Mexico.
+
+            Full time Student on Microverse like remote Software Developer.
+
+            I love to create solutions that helps to people to transform their ideas into reality, i specalized on
+            create solutions to individuals and small-bussines an Professional Software Enginner at your fingertips
+            trough clean and maintanable code with industry sandars and best coding practices.
+          </p>
+        </header>
+
+      </div>
+    </section><!-- #about -->
+
+    <!--==========================
+      Services Section
+    ============================-->
+    <section id="services">
+      <div class="container">
+
+        <header class="section-header wow fadeInUp">
+          <h3>Services</h3>
+          <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus, ad
+            pro quaestio laboramus. Ei ubique vivendum pro. At ius nisl accusam lorenta zanos paradigno tridexa
+            panatarel.</p>
+        </header>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
+            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
+              occaecati cupiditate non provident</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-bookmarks-outline"></i></div>
+            <h4 class="title"><a href="">Dolor Sitema</a></h4>
+            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat tarad limino ata</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-paper-outline"></i></div>
+            <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat nulla pariatur</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
+            <h4 class="title"><a href="">Magni Dolores</a></h4>
+            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+              mollit anim id est laborum</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-barcode-outline"></i></div>
+            <h4 class="title"><a href="">Nemo Enim</a></h4>
+            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+              voluptatum deleniti atque</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-people-outline"></i></div>
+            <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
+            <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum
+              soluta nobis est eligendi</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #services -->
+
+    <!--==========================
+      Call To Action Section
+    ============================-->
+    <section id="call-to-action" class="wow fadeIn">
+      <div class="container text-center">
+        <h3>Call To Action</h3>
+        <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <a class="cta-btn" href="#">Call To Action</a>
+      </div>
+    </section><!-- #call-to-action -->
+
+    <!--==========================
+      Skills Section
+    ============================-->
+    <section id="skills">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>Skills</h3>
+        </header>
+
+        <div class="skills-content">
+
+          <div class="progress">
+            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+              aria-valuemax="100">
+              <span class="skill">HTML <i class="val">100%</i></span>
+            </div>
+          </div>
+
+          <div class="progress">
+            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+              aria-valuemax="100">
+              <span class="skill">CSS <i class="val">90%</i></span>
+            </div>
+          </div>
+
+          <div class="progress">
+            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+              aria-valuemax="100">
+              <span class="skill">JavaScript <i class="val">75%</i></span>
+            </div>
+          </div>
+
+          <div class="progress">
+            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="55" aria-valuemin="0"
+              aria-valuemax="100">
+              <span class="skill">Photoshop <i class="val">55%</i></span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!--==========================
+      Portfolio Section
+    ============================-->
+    <section id="portfolio" class="section-bg">
+      <div class="container">
+
+        <header class="section-header">
+          <h3 class="section-title">My Portfolio</h3>
+        </header>
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="./assets/img/mock.png" class="img-fluid" alt="">
+                <a href="img/portfolio/app1.jpg" data-lightbox="portfolio" data-title="App 1" class="link-preview"
+                  title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">App 1</a></h4>
+                <p>App</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/portfolio/web3.jpg" class="img-fluid" alt="">
+                <a href="img/portfolio/web3.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 3"
+                  title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Web 3</a></h4>
+                <p>Web</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/portfolio/app2.jpg" class="img-fluid" alt="">
+                <a href="img/portfolio/app2.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 2"
+                  title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">App 2</a></h4>
+                <p>App</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/portfolio/card2.jpg" class="img-fluid" alt="">
+                <a href="img/portfolio/card2.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 2"
+                  title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Card 2</a></h4>
+                <p>Card</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/portfolio/web2.jpg" class="img-fluid" alt="">
+                <a href="img/portfolio/web2.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 2"
+                  title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Web 2</a></h4>
+                <p>Web</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/portfolio/app3.jpg" class="img-fluid" alt="">
+                <a href="img/portfolio/app3.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 3"
+                  title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">App 3</a></h4>
+                <p>App</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/portfolio/card1.jpg" class="img-fluid" alt="">
+                <a href="img/portfolio/card1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 1"
+                  title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Card 1</a></h4>
+                <p>Card</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/portfolio/card3.jpg" class="img-fluid" alt="">
+                <a href="img/portfolio/card3.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 3"
+                  title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Card 3</a></h4>
+                <p>Card</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/portfolio/web1.jpg" class="img-fluid" alt="">
+                <a href="img/portfolio/web1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 1"
+                  title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Web 1</a></h4>
+                <p>Web</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #portfolio -->
+
+    <!--==========================
+      Clients Section
+    ============================-->
+    <section id="clients" class="wow fadeInUp">
+      <div class="container">
+        <div class="owl-carousel clients-carousel">
+          <img src="img/clients/client-1.png" alt="">
+          <img src="img/clients/client-2.png" alt="">
+          <img src="img/clients/client-3.png" alt="">
+          <img src="img/clients/client-4.png" alt="">
+          <img src="img/clients/client-5.png" alt="">
+          <img src="img/clients/client-6.png" alt="">
+          <img src="img/clients/client-7.png" alt="">
+          <img src="img/clients/client-8.png" alt="">
+        </div>
+
+      </div>
+    </section><!-- #clients -->
+
+
+    <!--==========================
+      Contact Section
+    ============================-->
+    <section id="contact" class="section-bg wow fadeInUp">
+      <div class="container">
+
+        <div class="section-header">
+          <h3>Contact Me</h3>
+          <p>Do you have any question or do you want
+            to work togheter ?</p>
+        </div>
+
+
+        <div class="form">
+          <div id="sendmessage">Your message has been sent. Thank you!</div>
+          <div id="errormessage"></div>
+          <form action="" method="post" role="form" class="contactForm">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                  data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group col-md-6">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                  data-rule="email" data-msg="Please enter a valid email" />
+                <div class="validation"></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+                data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" name="message" rows="5" data-rule="required"
+                data-msg="Please write something for us" placeholder="Message"></textarea>
+              <div class="validation"></div>
+            </div>
+            <div class="text-center"><button type="submit">Send Message</button></div>
+          </form>
+        </div>
+
+      </div>
+    </section><!-- #contact -->
+
+  </main>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-6 col-6 footer-info d-flex align-items-center">
+            <h3>Available For Hire</h3>
+          </div>
+
+          <div class="col-lg-6 col-6 footer-contact">
+            <h4>Contact Me</h4>
+            <div class="social-links">
+              <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+              <a href="https://github.com/MephistoDevelop" class="github"><i class="fa fa-github"></i></a>
+              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+            </div>
+
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-newsletter">
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="./lib/jquery/jquery.min.js"></script>
+  <script src="./lib/jquery/jquery-migrate.min.js"></script>
+  <script src="./lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="./lib/easing/easing.min.js"></script>
+  <script src="./lib/superfish/hoverIntent.js"></script>
+  <script src="./lib/superfish/superfish.min.js"></script>
+  <script src="./lib/wow/wow.min.js"></script>
+  <script src="./lib/waypoints/waypoints.min.js"></script>
+  <script src="./lib/counterup/counterup.min.js"></script>
+  <script src="./lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="./lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="./lib/lightbox/js/lightbox.min.js"></script>
+  <script src="./lib/touchSwipe/jquery.touchSwipe.min.js"></script>
+  <!-- <script src="contactform/contactform.js"></script> -->
+</body>
+
 </html>
