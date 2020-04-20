@@ -1,12 +1,3 @@
-/*
-  Theme Name: BizPage
-  Theme URL: https://bootstrapmade.com/bizpage-bootstrap-business-template/
-  Author: BootstrapMade.com
-  License: https://bootstrapmade.com/license/
-*/
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
 body {
   background: #fff;
   color: #666666;
@@ -41,7 +32,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-right: 4%;
 }
 .webpack-icon{
-  width: 30px;
+  width: 40px;
   margin-bottom: 4%;
   margin-right: 4%;
 }
@@ -559,6 +550,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-align: center;
   padding-bottom: 30px;
   color: #333;
+  font-weight: 500;
+  font-size: 16px;
 }
 
 /* Section with background
@@ -612,7 +605,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* About Us Section
 --------------------------------*/
 #about {
-  background: url("../img/about-bg.jpg") center top no-repeat fixed;
+  background: url("../img/network.jpg") center top no-repeat fixed;
   background-size: cover;
   padding: 60px 0 40px 0;
   position: relative;
@@ -625,7 +618,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   right: 0;
   top: 0;
   bottom: 0;
-  background: rgba(255, 255, 255, 0.92);
+  background: rgba(255, 255, 255, 0.80);
   z-index: 9;
 }
 
@@ -942,8 +935,42 @@ body.mobile-nav-active #mobile-nav-toggle {
   border-radius: 50%;
   transition: 0.2s;
 }
+#portfolio .portfolio-item figure .link-preview2, #portfolio .portfolio-item figure .link-details {
+  position: absolute;
+  display: inline-block;
+  visibility: hidden;
+  line-height: 1;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  background: #fff;
+  border-radius: 50%;
+  transition: 0.2s;
+}
+#portfolio .portfolio-item figure .link-details3, #portfolio .portfolio-item figure .link-details {
+  position: absolute;
+  display: inline-block;
+  visibility: hidden;
+  line-height: 1;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  background: #fff;
+  border-radius: 50%;
+  transition: 0.2s;
+}
 
 #portfolio .portfolio-item figure .link-preview i, #portfolio .portfolio-item figure .link-details i {
+  padding-top: 6px;
+  font-size: 22px;
+  color: #333;
+}
+#portfolio .portfolio-item figure .link-preview2 i, #portfolio .portfolio-item figure .link-details i {
+  padding-top: 6px;
+  font-size: 22px;
+  color: #333;
+}
+#portfolio .portfolio-item figure .link-details3 i, #portfolio .portfolio-item figure .link-details i {
   padding-top: 6px;
   font-size: 22px;
   color: #333;
@@ -952,40 +979,66 @@ body.mobile-nav-active #mobile-nav-toggle {
 #portfolio .portfolio-item figure .link-preview:hover, #portfolio .portfolio-item figure .link-details:hover {
   background: #2E6AB3;
 }
+#portfolio .portfolio-item figure .link-preview2:hover, #portfolio .portfolio-item figure .link-details:hover {
+  background: #2E6AB3;
+}
 
+#portfolio .portfolio-item figure .link-details3:hover, #portfolio .portfolio-item figure .link-details:hover {
+  background: #2E6AB3;
+}
 #portfolio .portfolio-item figure .link-preview:hover i, #portfolio .portfolio-item figure .link-details:hover i {
+  color: #fff;
+}
+#portfolio .portfolio-item figure .link-preview2:hover i, #portfolio .portfolio-item figure .link-details:hover i {
+  color: #fff;
+}
+#portfolio .portfolio-item figure .link-details3:hover i, #portfolio .portfolio-item figure .link-details:hover i {
   color: #fff;
 }
 
 #portfolio .portfolio-item figure .link-preview {
-  left: calc(50% - 38px);
+  left: calc(50% - 90px);
   top: calc(50% - 18px);
 }
 
 #portfolio .portfolio-item figure .link-preview2 {
-  left: calc(50% - 38px);
+  left: calc(50% - 50px);
   top: calc(50% - 18px);
 }
-
+#portfolio .portfolio-item figure .link-details3 {
+  left: calc(50% - 50px);
+  top: calc(50% - 18px);
+}
 #portfolio .portfolio-item figure .link-preview2 i, #portfolio .portfolio-item figure .link-details i {
   padding-top: 6px;
   font-size: 22px;
   color: #333;
 }
-
+#portfolio .portfolio-item figure .link-details3 i, #portfolio .portfolio-item figure .link-details i {
+  padding-top: 6px;
+  font-size: 22px;
+  color: #333;
+}
 #portfolio .portfolio-item figure .link-details {
-  right: calc(50% - 38px);
+  right: calc(50% - 15px);
   top: calc(50% - 18px);
 }
 
 #portfolio .portfolio-item figure:hover .link-preview {
   visibility: visible;
-  left: calc(50% - 44px);
+  left: calc(50% - 8px);
 }
-
+#portfolio .portfolio-item figure:hover .link-preview2 {
+  visibility: visible;
+  left: calc(50% - 55px);
+}
+#portfolio .portfolio-item figure:hover .link-details3 {
+  visibility: visible;
+  left: calc(50% - 8px);
+}
 #portfolio .portfolio-item figure:hover .link-details {
   visibility: visible;
-  right: calc(50% - 44px);
+  right: calc(50% - 75px);
 }
 
 #portfolio .portfolio-item .portfolio-info {
@@ -997,7 +1050,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .card-description{
-  min-height: 65px;;
+  min-height: 85px;;
 }
 
 #portfolio .portfolio-item .portfolio-info h4 {
@@ -1332,6 +1385,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #footer .footer-top {
   background: #111;
+  padding: 20px 0;
 }
 
 #footer .footer-top .footer-info h3 {
