@@ -1,200 +1,610 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta property="og:title" content="MephistoDevelop Portfolio />
-    <meta property="og:description" content="Cristian Ines (MephistoDevelop) - Full Stack Web Developer Personal Portfolio" />
-    <meta property="og:image" content="https://avatars0.githubusercontent.com/u/19605034?s=460&v=4" />
-    <meta property="og:url" content="https://mephistodevelop.github.io/" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@MephistoDevelop" />
-    <meta name="twitter:creator" content="@MephistoDevelop" />
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/styles.css"></link>
-    <script src="js/index.js"></script>
-    <script src="js/jquery-3.4.1.js"></script>
-    <script src="js/animationen.js"></script>
-    <script src="js/language.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-    <script src="https://kit.fontawesome.com/d08a51000b.js" crossorigin="anonymous"></script>
-    <title>MephistoDevelop Site</title>
-  </head>
-  <body>
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-app.js"></script>
-      <!-- TODO: Add SDKs for Firebase products that you want to use
-         https://firebase.google.com/docs/web/setup#available-libraries -->
-      <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-database.js"></script>
-      <!-- TODO: Add SDKs for Firebase products that you want to use
-         https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script>
-  // Your web app's Firebase configuration
-      var firebaseConfig = {
-      apiKey: "AIzaSyAeAmZYNYhxI_2M394CjfqAXAQ_2QCIQGs",
-      authDomain: "mephistodevelop.firebaseapp.com",
-      databaseURL: "https://mephistodevelop.firebaseio.com",
-      projectId: "mephistodevelop",
-      storageBucket: "mephistodevelop.appspot.com",
-      messagingSenderId: "201559418194",
-      appId: "1:201559418194:web:23edb5a8736080d225468b"
-    };
-    // In itialize Firebase
-    firebase.initializeApp(firebaseConfig);
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta property="og:title" content="MephistoDevelop Portfolio />
+    <meta property=" og:description"
+    content="Cristian Ines (MephistoDevelop) - Full Stack Web Developer Personal Portfolio" />
+  <meta property="og:image" content="https://avatars0.githubusercontent.com/u/19605034?s=460&v=4" />
+  <meta property="og:url" content="https://mephistodevelop.github.io/" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@MephistoDevelop" />
+  <meta name="twitter:creator" content="@MephistoDevelop" />
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/styles.css">
+  </link>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700"
+    rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="./lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="./lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="./lib/animate/animate.min.css" rel="stylesheet">
+  <link href="./lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="./lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="./lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
 
-  // Get a reference to the database service
-    </script>
-        <nav class="navbar fixed-top navbar-light m-0 p-0" id="navbar-main">
-          <!-- <div class="ml-3 align-middle" id="flags">
-            <button onclick="window.location ='index-es.html'"  id="btnspanish"  ></button>
-            <button  id="btnenglish"></button>
-          </div> -->
-          <a class="buttonfx navbar-links" id="aboutme-text" href="#aboutme-section">About me</a>
-          <a class="buttonfx navbar-links" id="aboutme-text" href="#skills-section">Skills</a>
-          <a class="buttonfx navbar-links" id="aboutme-text" href="#projects-section">Projects</a>
-          <a class="buttonfx navbar-links" id="aboutme-text" href="#contact-section">Contact</a>
-          <a class="buttonfx navbar-links link" id="aboutme-text" href="#">Resume</a>
-        </nav>
-        <div id="skeleton">
-          <div id="main-container" class="container w-100">
-            <div class="container m-0 p-0">
-              <div class="center-e">
-                <!-- <p class="ml4" id="text">Web Full-Stack Developer - Software Engineer </p> -->
-                <p class="ml5" id="texto">“Hi, I’m Cristian a software engineer, student from microverse school from remote software developer, passionate by making life easier through new web technologies using a maintainable and clean code”</p>
-                <a class="button btn-2"  id="btnstart" href="#aboutme-section">More About me</a>
-              </div>
-            </div>
-            <div class="w-100 separator" id="skills-section">SKILLS</div>
-            <div class="content">
-              <div class="d-flex" id="skills-container">
-                <div id="photo-me-container" class="col">
-                  <img src="assets/img/me.jpg" id="photo-me">
-                </div>
-                <div class="skillset-container-main col-6">
-                  <div class="container" id="skillset-container">
-                    <h1 id="skillset-header">Skill Set</h1>
-                    <div class="bar front expert" data-skill="HTML"></div>
-                    <div class="bar front expert" data-skill="CSS"></div>
-                    <div class="bar front expert" data-skill="JavaScript"></div>
-                    <div class="bar learning" data-skill="C#"></div>
-                    <div class="bar front advanced" data-skill="Ruby"></div>
-                    <div class="bar front advanced" data-skill="Ruby on Rails"></div>
-                    <div class="bar front advanced" data-skill="React.JS"></div>
-                    <div class="bar back intermediate" data-skill="Node.Js"></div>
-                    <div class="bar front expert" data-skill="TDD"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="w-100 separator" id="projects-section">PROJECTS</div>
-            <div class="content">
-              <div id="mock1-container" class="card col">
-              <img src="assets/img/mock3.jpg" id="img-socialbook">
-              <div class="mock-title">SocialBook Blog Page</div>
-              <div class="mock-text">Ruby on Rails / Hml / CSS / OmniAuth / Heroku</div>
-              <div id="buttons-hide">
-                <form action="https://github.com/MephistoDevelop/SocialBook" target="_blank">
-                  <button class="button button-mock" ><img src="assets/img/github.png" class="btn-2" alt="github icon" id="githubicon"> GitHub</button>
-                </form>
-              <form action="https://socialbook2019.herokuapp.com" target="_blank">
-                <button class="button button-mock" >Live View</button>
-              </form>
-              </div>
-              </div>
-            </div>
-            <div class="content">
-              <div id="mock1-container" class="card col">
-              <img src="assets/img/mock.png" id="img-battleship">
-              <div class="mock-title">Weather Aplication Page</div>
-              <div class="mock-text"> Hml / CSS /JavaScript / WebPack / GitPages</div>
-              <div id="buttons-hide">
-                <form action="https://github.com/MephistoDevelop/WeatherApp" target="_blank">
-                  <button class="button button-mock" ><img src="assets/img/github.png" class="btn-2" alt="github icon" id="githubicon"> GitHub</button>
-                </form>
-              <form action="https://mephistodevelop.github.io/WeatherApp/" target="_blank">
-                <button class="button button-mock" >Live View</button>
-              </form>
-              </div>
-              </div>
-            </div>
-            <div class="content">
-              <div id="mock1-container" class="card col">
-              <img src="assets/img/mock4.png" id="img-battleship">
-              <div class="mock-title">React Calculator</div>
-              <div class="mock-text"> Hml / CSS / JavaScript / REACT / HEROKU </div>
-              <div id="buttons-hide">
-                <form action="https://github.com/MephistoDevelop/react_calculator" target="_blank">
-                  <button class="button button-mock" ><img src="assets/img/github.png" class="btn-2" alt="github icon" id="githubicon"> GitHub</button>
-                </form>
-              <form action="https://react-calculator2020.herokuapp.com/" target="_blank">
-                <button class="button button-mock" >Live View</button>
-              </form>
-              </div>
-              </div>
-            </div>
-            <div class="content">
-              <div id="mock1-container" class="card col">
-              <img src="assets/img/mock2.png" id="img-battleship">
-              <div class="mock-title">BattleShip Game Page</div>
-              <div class="mock-text"> Hml / CSS / JavaScript / WEBPACK / TDD / JEST </div>
-              <div id="buttons-hide">
-                <form action="https://github.com/MephistoDevelop/battleship" target="_blank">
-                  <button class="button button-mock" ><img src="assets/img/github.png" class="btn-2" alt="github icon" id="githubicon"> GitHub</button>
-                </form>
-              <form action="https://mephistodevelop.github.io/battleship/" target="_blank">
-                <button class="button button-mock" >Live View</button>
-              </form>
-              </div>
-              </div>
-            </div>
+  <script src="js/index.js"></script>
+  <script src="js/jquery-3.4.1.js"></script>
+  <script src="js/animationen.js"></script>
+  <script src="js/language.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <script src="https://kit.fontawesome.com/d08a51000b.js" crossorigin="anonymous"></script>
+  <title>MephistoDevelop Site</title>
+</head>
 
-            <div class="content">
-              <div id="mock1-container" class="card col">
-              <img src="assets/img/mockup5.png" id="img-battleship">
-              <div class="mock-title">To-Do Task Manager</div>
-              <div class="mock-text"> Hml / CSS / JavaScript / WEBPACK  </div>
-              <div id="buttons-hide">
-                <form action="https://github.com/MephistoDevelop/ToDo-List" target="_blank">
-                  <button class="button button-mock" ><img src="assets/img/github.png" class="btn-2" alt="github icon" id="githubicon"> GitHub</button>
-                </form>
-              <form action="https://mephistodevelop.github.io/ToDo-List/" target="_blank">
-                <button class="button button-mock" >Live View</button>
-              </form>
-              </div>
-              </div>
-            </div>
+<body>
 
-            <div class="w-100 separator" id="aboutme-section">ABOUT ME</div>
-            <div class="content" id="aboutme-description" >
-              Graduated from Engineer of Computer Systems passionate for Develelopment and Electronic from Jalisco,Mexico.<br><br>
-              Full time Student on Microverse like remote Software Developer.<br><br>
-              I love to create solutions that helps to people to transform their ideas into reality, i specalized on create solutions to individuals and small-bussines
-               an Professional Software Enginner at your fingertips trough clean and maintanable code with industry sandars and best coding practices.
-            </div>
-            <div class="w-100 separator" id="contact-section">CONTACT</div>
-            <div class="card container d-flex align-items-center" id="card-contact">
-              <div class="container d-flex justify-content-center col" id="form-contact">
-                <p class="text-left" id="form-text">Do you have any question or do you want<br> to work togheter ? </p>
-                <input type="text" class="input-form" placeholder="Name">
-                <input type="text" class="input-form" placeholder="Your Email">
-                <textarea placeholder="Your Message" id="txtmessage" class="input-form"></textarea>
-                <button id="btnstart" class="btn-2 button">SUBMIT</button>
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container-fluid">
+      <div id="logo" class="pull-left">
+        <h1><a href="#about" class="scrollto">MephistoDevelop</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="#intro"><img src="img/logo.png" alt="" title="" /></a>-->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li><a href="#intro">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#portfolio">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="https://drive.google.com/file/d/1ubRTxbpeYBfiS3mtWOgf3bPAQnDUc6qu/view?usp=sharing"
+              target="_blank">Resume</a>
+          </li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro">
+    <div class="intro-container">
+      <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
+
+        <ol class="carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <div class="carousel-item active"
+            style="background-image: url('./assets/img/inesfinal.png'); background-size:auto; background-position-x: 750px; background-position-y: 80px;">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="ml-5 pl-5">Remote Full-Stack Web Developer</h2>
+                <p class="ml-5 pl-5 text-align-left">Hi, I'm Cristian, a software engineer and student of Microverse, an
+                  online
+                  school for remote
+                  full-stack development that uses pair programming and agile methodologies to teach Ruby, Rails, React,
+                  and more.
+                </p>
+                <a href="#about" class="btn-get-started scrollto">More About me</a>
               </div>
             </div>
+          </div>
 
-            <div class="mylink" >
-              <a href="#head" id="backtop" onclick="gotop()"><i class="fas fa-arrow-up "></i></a>
-              <a  target="_blank" href="https://www.facebook.com/Mephisto1992"><img src="assets/img/facebook.png" alt="Facebook icon" class="btn-2" id="fbicon"></a>
-              <a  target="_blank" href="https://www.linkedin.com/in/cristian-hernandez1992/"><img src="assets/img/linkedin.png" alt="Linkedin icon" class="btn-2" id="linkedinicon"></a>
-              <a target="_blank" href="https://github.com/MephistoDevelop"><img src="assets/img/github.png" class="btn-2" alt="github icon" id="githubicon"></a>
-              <a target="_blank" id="txtmephisto" class="btn-2 ml-2" href="https://github.com/MephistoDevelop">MephistoDevelop</a>
+          <div class="carousel-item"
+            style="background-image: url('./assets/img/inesfinal.png'); background-size:auto; background-position-x: 750px; background-position-y: 80px;">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="ml-5 pl-5">Developer With Best Code Practices </h2>
+                <p class="ml-5 pl-5 text-align-left"> I'm passionate about making life easier via new web technologies
+                  and
+                  clean, maintainable
+                  code, and I love to use logic and problem-solving skills along with patience and attention to detail
+                  in order to achieve those goals.</p>
+                <a href="#portfolio" class="btn-get-started scrollto">See My Work</a>
+              </div>
             </div>
+          </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon ion-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+
+        <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon ion-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+
+      </div>
+    </div>
+  </section><!-- #intro -->
+
+  <main id="main">
+
+    <!--==========================
+      About Us Section
+    ============================-->
+    <section id="about">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>About Me</h3>
+          <p>I graduated from Engineer of Computer Systems passionate for Development and Electronic from Jalisco,
+            Mexico. Full-time Student on Microverse like remote Software Developer. I love to create solutions that
+            helps to people to transform their ideas into reality, I specialized on create solutions to individuals and
+            small-business a Professional Software Engineer at your fingertips trough clean and maintainable code with
+            industry standards and best coding practices.
+          </p>
+        </header>
+
+      </div>
+    </section><!-- #about -->
+
+    <!--==========================
+      Services Section
+    ============================-->
+    <section id="skills">
+      <div class="container">
+        <header class="section-header wow fadeInUp">
+          <h3>Skills</h3>
+
+        </header>
+
+        <div class="row mt-5 mb-5">
+
+          <div class="col-lg-3 col-md-6 box wow bounceInUp" data-wow-duration="1.7s">
+            <h4 class="title"><a href="">Front-End</a></h4>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><i class="fab fa-html5 icons-card"></i> HTML</li>
+              <li class="list-group-item"><i class="fab fa-css3-alt icons-card"></i>CSS</li>
+              <li class="list-group-item"><i class="fab fa-js-square icons-card"></i>Javascript</li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 box wow bounceInUp" data-wow-duration="1.7s">
+            <h4 class="title"><a href="">Backend</a></h4>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><img src="./assets/img/asp.png" class="img-fluid webpack-icon" alt="">C#
+              </li>
+              <li class="list-group-item"><img src="./assets/img/ruby.png" class="img-fluid webpack-icon" alt=""> Ruby
+              </li>
+              <li class="list-group-item"><i class="fab fa-node-js icons-card"></i>Node.js</li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 box wow bounceInUp" data-wow-duration="1.7s">
+            <h4 class="title"><a href="">Frameworks</a></h4>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><img src="./assets/img/rails.png" class="img-fluid webpack-icon" alt="">Ruby
+                on Rails</li>
+              <li class="list-group-item"><i class="fab fa-react icons-card"></i>React</li>
+              <li class="list-group-item"><img src="./assets/img/webpack.png" class="img-fluid webpack-icon"
+                  alt="">Webpack</li>
+              <li class="list-group-item"><img src="./assets/img/phaser.png" class="img-fluid webpack-icon"
+                  alt="">Phaser.Js</li>
+              <li class="list-group-item"><img src="./assets/img/xamarin.png" class="img-fluid webpack-icon"
+                  alt="">Xamarin Studio</li>
+              <li class="list-group-item"><img src="./assets/img/android.png" class="img-fluid webpack-icon"
+                  alt="">Android Studio</li>
+              <li class="list-group-item"><img src="./assets/img/asp.png" class="img-fluid webpack-icon" alt="">.Net
+                Core</li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 box wow bounceInUp" data-wow-duration="1.7s">
+            <h4 class="title"><a href="">Databases</a></h4>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><img src="./assets/img/mysql.png" class="img-fluid webpack-icon" alt="">MySQL
+              </li>
+              <li class="list-group-item"><img src="./assets/img/postgre.png" class="img-fluid webpack-icon" alt="">
+                PosgreSQL</li>
+              <li class="list-group-item"><img src="./assets/img/sqlserver.png" class="img-fluid webpack-icon"
+                  alt="">SQLServer</li>
+              <li class="list-group-item"><img src="./assets/img/sqlite.png" class="img-fluid webpack-icon"
+                  alt="">SQLite</li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 box wow bounceInUp" data-wow-duration="1.7s">
+            <h4 class="title"><a href="">Dev-Ops</a></h4>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><img src="./assets/img/aws.png" class="img-fluid webpack-icon" alt="">Amazon
+                Web Services</li>
+              <li class="list-group-item"><img src="./assets/img/azure.png" class="img-fluid webpack-icon"
+                  alt="">Microsoft Azure Cloud Storage </li>
+              <li class="list-group-item"><img src="./assets/img/heroku.png" class="img-fluid webpack-icon"
+                  alt="">Heroku Services</li>
+            </ul>
           </div>
         </div>
 
-        <div class="footer ml-1 mr-1 d-flex justify-content-center pt-4">MephistoDevelop ® 2019</div>
-  </body>
+      </div>
+    </section><!-- #services -->
+
+    <!--==========================
+      Portfolio Section
+    ============================-->
+    <section id="portfolio" class="section-bg">
+      <div class="container">
+
+        <header class="section-header">
+          <h3 class="section-title  mb-5">My Portfolio</h3>
+        </header>
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="./assets/img/meals-screenshot.png" class="img-fluid" alt="">
+                <a href="./assets/img/meals-screenshot.png" data-lightbox="portfolio" data-title="App 1"
+                  class="link-preview2" title="Preview">
+                  <i class="ion ion-eye"></i></a>
+                <a href="https://socialbook2019.herokuapp.com" class="link-details3" title="Live View"
+                  target="_blank"><i class="fas fa-tv"></i></a>
+                <a href="https://github.com/MephistoDevelop/recipes_of_meals" class="link-details" target="_blank"
+                  title="GitHub Repository"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info" style="min-height: 0px;">
+                <h4><a href="#">Recipes Meals WebPage</a></h4>
+                <p class="card-description">Catalogue Recipe of Meals made with REACT from UI,REDUX Store to Manage
+                  information data , API
+                  Request with JSON response and everything deployed on Heroku</p>
+                <i class="fab fa-html5 icons-card"></i>
+                <i class="fab fa-css3-alt icons-card"></i>
+                <i class="fab fa-js-square icons-card"></i>
+                <i class="fab fa-react icons-card"></i>
+                <img src="./assets/img/redux.png" class="img-fluid webpack-icon" alt="">
+                <i class="fab fa-node-js icons-card"></i>
+                <i class="fab fa-github icons-card"></i>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+
+                <img src="./assets/img/mock.png" class="img-fluid" alt="">
+                <a href="./assets/img/mock.png" data-lightbox="portfolio" data-title="App 1" class="link-preview2"
+                  title="Preview">
+                  <i class="ion ion-eye"></i></a>
+                <a href="https://mephistodevelop.github.io/WeatherApp/" class="link-details3" title="Live View"
+                  target="_blank"><i class="fas fa-tv"></i></a>
+                <a href="https://github.com/MephistoDevelop/WeatherApp" class="link-details" target="_blank"
+                  title="GitHub Repository"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Weather Application</a></h4>
+                <p class="card-description">Weather Application made with Javascript and Webpack using HTTP
+                  Request to a weather API page with deploy on Git-Pages</p>
+                <i class="fab fa-html5 icons-card"></i>
+                <i class="fab fa-css3-alt icons-card"></i>
+                <i class="fab fa-js-square icons-card"></i>
+                <i class="fab fa-bootstrap icons-card"></i>
+                <img src="./assets/img/webpack.png" class="img-fluid webpack-icon" alt="">
+                <!-- <i class="fab fa-react icons-card"></i> -->
+                <i class="fab fa-node-js icons-card"></i>
+                <i class="fab fa-github icons-card"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="./assets/img/mock3.jpg" class="img-fluid" alt="">
+                <a href="./assets/img/mock3.jpg" data-lightbox="portfolio" data-title="App 1" class="link-preview2"
+                  title="Preview">
+                  <i class="ion ion-eye"></i></a>
+                <a href="https://socialbook2019.herokuapp.com" class="link-details3" title="Live View"
+                  target="_blank"><i class="fas fa-tv"></i></a>
+                <a href="https://github.com/MephistoDevelop/SocialBook" class="link-details" target="_blank"
+                  title="GitHub Repository"><i class="ion ion-android-open"></i></a>
+              </figure>
+              <div class="portfolio-info">
+                <h4><a href="#">SocialBook Blog Page</a></h4>
+                <p class="card-description">SocialBook page made with Ruby on Rails framework with deploy on Heroku with
+                  PostgreSQL Database.</p>
+                <i class="fab fa-html5 icons-card"></i>
+                <i class="fab fa-css3-alt icons-card"></i>
+                <i class="fab fa-js-square icons-card"></i>
+                <img src="./assets/img/ruby.png" class="img-fluid webpack-icon" alt="">
+                <img src="./assets/img/rails.png" class="img-fluid webpack-icon" alt="">
+                <i class="fab fa-bootstrap icons-card"></i>
+                <!-- <i class="fab fa-react icons-card"></i> -->
+                <i class="fab fa-github icons-card"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="./assets/img/mock2.png" class="img-fluid" alt="">
+                <a href="./assets/img/mock2.png" data-lightbox="portfolio" data-title="App 1" class="link-preview2"
+                  title="Preview">
+                  <i class="ion ion-eye"></i></a>
+                <a href="https://mephistodevelop.github.io/battleship/" class="link-details3" title="Live View"
+                  target="_blank"><i class="fas fa-tv"></i></a>
+                <a href="https://github.com/MephistoDevelop/battleship" class="link-details" target="_blank"
+                  title="GitHub Repository"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">BattleShip Game</a></h4>
+                <p class="card-description">Battleship Game made with Javascript and Webpack with Jest Tests library
+                  with deploy on GitHub pages.
+                </p>
+                <i class="fab fa-html5 icons-card"></i>
+                <i class="fab fa-css3-alt icons-card"></i>
+                <i class="fab fa-js-square icons-card"></i>
+                <i class="fab fa-bootstrap icons-card"></i>
+                <img src="./assets/img/webpack.png" class="img-fluid webpack-icon" alt="">
+                <!-- <i class="fab fa-react icons-card"></i> -->
+                <i class="fab fa-node-js icons-card"></i>
+                <i class="fab fa-github icons-card"></i>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="./assets/img/BookStore.png" class="img-fluid" alt="">
+                <a href="./assets/img/BookStore.png" data-lightbox="portfolio" data-title="BookStore"
+                  class="link-preview2" title="Preview">
+                  <i class="ion ion-eye"></i></a>
+                <a href="https://bookstore-mephistodevelop.herokuapp.com/" class="link-details3" title="Live View"
+                  target="_blank"><i class="fas fa-tv"></i></a>
+                <a href="https://github.com/MephistoDevelop/React-Bookstore" class="link-details" target="_blank"
+                  title="GitHub Repository"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">BookStore CMS</a></h4>
+                <p class="card-description">Web</p>
+                <i class="fab fa-html5 icons-card"></i>
+                <i class="fab fa-css3-alt icons-card"></i>
+                <i class="fab fa-js-square icons-card"></i>
+                <i class="fab fa-react icons-card"></i>
+                <img src="./assets/img/redux.png" class="img-fluid webpack-icon" alt="">
+                <i class="fab fa-node-js icons-card"></i>
+                <i class="fab fa-github icons-card"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="./assets/img/screenshot-phaser.png" class="img-fluid" alt="">
+                <a href="./assets/img/screenshot-phaser.png" data-lightbox="portfolio" data-title="BookStore"
+                  class="link-preview2" title="Preview">
+                  <i class="ion ion-eye"></i></a>
+                <a href="https://mephistodevelop.github.io/phaser_shooting_game/" class="link-details3"
+                  title="Live View" target="_blank"><i class="fas fa-tv"></i></a>
+                <a href="https://github.com/MephistoDevelop/phaser_shooting_game" class="link-details" target="_blank"
+                  title="GitHub Repository"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Spacial Shooting Game</a></h4>
+                <p class="card-description">Amazing Spacial Shooting Game made with JavaScript | Webpack | Phaser Game
+                  Framework | using best coding practice and Test-Driven Development</p>
+                <i class="fab fa-html5 icons-card"></i>
+                <i class="fab fa-css3-alt icons-card"></i>
+                <i class="fab fa-js-square icons-card"></i>
+                <i class="fab fa-bootstrap icons-card"></i>
+                <img src="./assets/img/phaser.png" class="img-fluid webpack-icon" alt="">
+                <!-- <i class="fab fa-react icons-card"></i> -->
+                <i class="fab fa-node-js icons-card"></i>
+                <i class="fab fa-github icons-card"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="./assets/img/tictac-screenshot.png" class="img-fluid" alt="">
+                <a href="./assets/img/tictac-screenshot.png" data-lightbox="portfolio" data-title="BookStore"
+                  class="link-preview2" title="Preview">
+                  <i class="ion ion-eye"></i></a>
+                <a href="https://mephistodevelop.github.io/tic-tac-toe/" class="link-details3" title="Live View"
+                  target="_blank"><i class="fas fa-tv"></i></a>
+                <a href="https://github.com/MephistoDevelop/tic-tac-toe" class="link-details" target="_blank"
+                  title="GitHub Repository"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Tic-Tac-Toe Game</a></h4>
+                <p class="card-description">Repository to save the Tic tac Toe Game made with JavaScript from the
+                  Microverse Main curriculum show mastery on Javascript code.</p>
+                <i class="fab fa-html5 icons-card"></i>
+                <i class="fab fa-css3-alt icons-card"></i>
+                <i class="fab fa-js-square icons-card"></i>
+                <i class="fab fa-bootstrap icons-card"></i>
+                <img src="./assets/img/webpack.png" class="img-fluid webpack-icon" alt="">
+                <!-- <i class="fab fa-react icons-card"></i> -->
+                <i class="fab fa-node-js icons-card"></i>
+                <i class="fab fa-github icons-card"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="./assets/img/restaurant.png" class="img-fluid" alt="">
+                <a href="./assets/img/restaurant.png" data-lightbox="portfolio" data-title="BookStore"
+                  class="link-preview2" title="Preview">
+                  <i class="ion ion-eye"></i></a>
+                <a href="https://mephistodevelop.github.io/restaurant_page/" class="link-details3" title="Live View"
+                  target="_blank"><i class="fas fa-tv"></i></a>
+                <a href="https://github.com/MephistoDevelop/restaurant_page" class="link-details" target="_blank"
+                  title="GitHub Repository"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Restaurant Web Page</a></h4>
+                <p class="card-description">Restaurant page made with only Js and webpack from a part of Microverse
+                  JavaScript Course with deploy on Git-Pages using Git Flow</p>
+                <i class="fab fa-html5 icons-card"></i>
+                <i class="fab fa-css3-alt icons-card"></i>
+                <i class="fab fa-js-square icons-card"></i>
+                <i class="fab fa-bootstrap icons-card"></i>
+                <img src="./assets/img/webpack.png" class="img-fluid webpack-icon" alt="">
+                <!-- <i class="fab fa-react icons-card"></i> -->
+                <i class="fab fa-node-js icons-card"></i>
+                <i class="fab fa-github icons-card"></i>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="./assets/img/mockup5.png" class="img-fluid" alt="">
+                <a href="./assets/img/mockup5.png" data-lightbox="portfolio" data-title="BookStore"
+                  class="link-preview2" title="Preview">
+                  <i class="ion ion-eye"></i></a>
+                <a href="https://mephistodevelop.github.io/ToDo-List/" class="link-details3" title="Live View"
+                  target="_blank"><i class="fas fa-tv"></i></a>
+                <a href="https://github.com/MephistoDevelop/ToDo-List" class="link-details" target="_blank"
+                  title="GitHub Repository"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">To-Do Task Manager</a></h4>
+                <p class="card-description">To-Do List project to manage your times and tasks made with JavaScript and
+                  Webpack deployed on git-hub Pages</p>
+                <i class="fab fa-html5 icons-card"></i>
+                <i class="fab fa-css3-alt icons-card"></i>
+                <i class="fab fa-js-square icons-card"></i>
+                <i class="fab fa-bootstrap icons-card"></i>
+                <img src="./assets/img/webpack.png" class="img-fluid webpack-icon" alt="">
+                <!-- <i class="fab fa-react icons-card"></i> -->
+                <i class="fab fa-node-js icons-card"></i>
+                <i class="fab fa-github icons-card"></i>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #portfolio -->
+
+    <!--==========================
+      Contact Section
+    ============================-->
+    <section id="contact" class="section-bg wow fadeInUp">
+      <div class="container">
+
+        <div class="section-header">
+          <h3>Contact Me</h3>
+          <p>Do you have any question or do you want
+            to work togheter ?</p>
+        </div>
+
+
+        <div class="form">
+          <div id="sendmessage">Your message has been sent. Thank you!</div>
+          <div id="errormessage"></div>
+          <form action="" method="post" role="form" class="contactForm">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                  data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group col-md-6">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                  data-rule="email" data-msg="Please enter a valid email" />
+                <div class="validation"></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+                data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" name="message" rows="5" data-rule="required"
+                data-msg="Please write something for us" placeholder="Message"></textarea>
+              <div class="validation"></div>
+            </div>
+            <div class="text-center"><button type="submit">Send Message</button></div>
+          </form>
+        </div>
+
+      </div>
+    </section><!-- #contact -->
+
+  </main>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-6 col-6 footer-info d-flex align-items-center">
+            <h3>Available For Hire</h3>
+          </div>
+
+          <div class="col-lg-6 col-6 footer-contact">
+            <h4 class="mb-2 pb-2">Contact Me</h4>
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/cristian-hernandez1992/" class="linkedin"><i
+                  class="fa fa-linkedin"></i></a>
+              <a href="https://github.com/MephistoDevelop" class="github"><i class="fa fa-github"></i></a>
+              <a href="https://twitter.com/MephistoDevelop" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="https://www.facebook.com/Mephisto1992" class="facebook"><i class="fa fa-facebook"></i></a>
+            </div>
+
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-newsletter">
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="./lib/jquery/jquery.min.js"></script>
+  <script src="./lib/jquery/jquery-migrate.min.js"></script>
+  <script src="./lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="./lib/easing/easing.min.js"></script>
+  <script src="./lib/superfish/hoverIntent.js"></script>
+  <script src="./lib/superfish/superfish.min.js"></script>
+  <script src="./lib/wow/wow.min.js"></script>
+  <script src="./lib/waypoints/waypoints.min.js"></script>
+  <script src="./lib/counterup/counterup.min.js"></script>
+  <script src="./lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="./lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="./lib/lightbox/js/lightbox.min.js"></script>
+  <script src="./lib/touchSwipe/jquery.touchSwipe.min.js"></script>
+  <script src="./js/effects.js"></script>
+  <script src="./js/contactform.js"></script>
+</body>
+
 </html>
