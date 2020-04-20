@@ -4,7 +4,7 @@
 
 ## ScreenShot
 
-![screenshot](./portfolio.gif)
+![screenshot](./portfolionew.gif)
 
 ## Built with:
 
