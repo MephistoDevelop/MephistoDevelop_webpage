@@ -20,7 +20,7 @@
 - .stickler file with the basic config
 - assets folder
   -style.css file to styles properties
-  -reset.css file to a style reset from the style components
+  -reset.css file to reset the style from the style components
   
 ## Live Demo Link
 
@@ -30,7 +30,7 @@
 
 
 ## Getting Started
-To start to using this project you will need to clone or download this repository to your localhost and then open the index.html file on your server.
+To start using this project you will need to clone or download this repository to your localhost and then open the index.html file on your server.
 
 ### Deployment
 
