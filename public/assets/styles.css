@@ -26,6 +26,114 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 20px 0;
   padding: 0;
 }
+.bg-me{
+  background-image: url('./img/inesfinal.png');
+   background-size:auto !important;
+   background-position-x: 840px !important;
+  background-position-y: 90px !important;
+}
+header #header {
+  min-width: 787px !important;
+}
+@media (max-width: 1250px) {
+  .bg-me{
+    background-image: url('./img/inesfinal.png');
+     background-size:auto !important;
+     background-position-x: 720px !important;
+    background-position-y: 90px !important;
+  }
+  #intro p{
+    width: 25%;;
+  }
+}
+@media (max-width: 1150px) {
+  #header #logo h1 {
+    font-size: 26px !important;
+  }
+
+#intro h2 {
+  margin-bottom: 30px;
+  font-size: 42px;
+  margin-top: 24%;
+  margin-left: 14% !important;
+}
+
+  .bg-me{
+    background-image: url('./img/inesfinal.png');
+     background-size:auto !important;
+     background-position-x: 300px !important;
+    background-position-y: 60px !important;
+  }
+  #intro p{
+    width: 75% !important;
+    margin-left: 14% !important;
+  }
+  #intro .btn-get-started {
+    margin-left: 43% !important;
+  }
+}
+@media (max-width: 820px) {
+
+  #intro h2 {
+    font-size: 32px !important;
+    margin-top: 19%;
+    padding: 0 8% !important;
+  }
+  #header #logo h1 {
+    font-size: 20px !important;
+  }
+  .bg-me{
+    background-image: url('./img/inesfinal.png');
+     background-size:auto !important;
+     background-position-x: 120px !important;
+    background-position-y: 40px !important;
+  }
+  #intro p{
+    width: 75% !important;
+    margin-left: 16% !important;
+  }
+  #intro .btn-get-started {
+    margin-left: 35% !important;
+  }
+}
+
+@media (max-width: 650px) {
+
+  .header-intro{
+    margin-top: 20%;
+  }
+  .bg-me{
+    background-image: url('./img/inesfinal.png');
+     background-size:auto !important;
+     background-position-x: 50px !important;
+    background-position-y: 40px !important;
+  }
+}
+@media (max-width: 500px) {
+  .bg-me{
+    background-image: url('./img/inesfinal.png');
+     background-size:auto !important;
+     background-position-x: -20px !important;
+    background-position-y: 40px !important;
+  }
+  #intro .btn-get-started {
+    margin-left: 25% !important;
+}
+.list-group {
+align-items: left;
+}
+.title{
+  text-align: center;
+}
+
+.list-group-flush .list-group-item {
+  height: 70px !important;
+}
+
+li .icons-card {
+  margin-right: 15% !important;
+}
+}
 
 .icons-card{
   font-size: 30px;
@@ -59,7 +167,9 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 12px;
   color: #fff;
 }
-
+#slider-description{
+  min-width: 770px !important;
+}
 @media (max-width: 768px) {
   .back-to-top {
     bottom: 15px;
@@ -1166,103 +1276,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin: 0 auto 15px auto;
 }
 
-@media (min-width: 992px) {
-  #testimonials .testimonial-item p {
-    width: 80%;
-  }
-}
-
 #testimonials .owl-nav, #testimonials .owl-dots {
   margin-top: 5px;
   text-align: center;
-}
-
-#testimonials .owl-dot {
-  display: inline-block;
-  margin: 0 5px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: #ddd;
-}
-
-#testimonials .owl-dot.active {
-  background-color: #2E6AB3;
-}
-
-/* Team Section
---------------------------------*/
-#team {
-  background: #fff;
-  padding: 60px 0;
-}
-
-#team .member {
-  text-align: center;
-  margin-bottom: 20px;
-  background: #000;
-  position: relative;
-}
-
-#team .member .member-info {
-  visibility: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  transition: 0.2s;
-}
-
-#team .member .member-info-content {
-  margin-top: -50px;
-  transition: margin 0.2s;
-}
-
-#team .member:hover .member-info {
-  background: rgba(0, 0, 0, 0.7);
-  visibility: visible;
-  transition: 0.4s;
-}
-
-#team .member:hover .member-info-content {
-  margin-top: 0;
-  transition: margin 0.4s;
-}
-
-#team .member h4 {
-  font-weight: 700;
-  margin-bottom: 2px;
-  font-size: 18px;
-  color: #fff;
-}
-
-#team .member span {
-  font-style: italic;
-  display: block;
-  font-size: 13px;
-  color: #fff;
-}
-
-#team .member .social {
-  margin-top: 15px;
-}
-
-#team .member .social a {
-  transition: none;
-  color: #fff;
-}
-
-#team .member .social a:hover {
-  color: #2E6AB3;
-}
-
-#team .member .social i {
-  font-size: 18px;
-  margin: 0 2px;
 }
 
 /* Contact Section
