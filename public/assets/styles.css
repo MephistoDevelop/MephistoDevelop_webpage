@@ -61,7 +61,7 @@ header #header {
     margin-bottom: 5%;
   }
   #header #logo h1 {
-    font-size: 26px !important;
+    font-size: 20px !important;
   }
 
 #intro h2 {
@@ -88,12 +88,12 @@ header #header {
 @media (max-width: 820px) {
 
   #intro h2 {
-    font-size: 32px !important;
+    font-size: 24px !important;
     margin-top: 19%;
     padding: 0 8% !important;
   }
   #header #logo h1 {
-    font-size: 20px !important;
+    font-size: 18px !important;
   }
   .bg-me{
     background-image: url('./img/inesfinal.png');
@@ -240,7 +240,7 @@ li .icons-card {
 }
 
 #header #logo h1 {
-  font-size: 34px;
+  font-size: 24px;
   margin: 0;
   padding: 0;
   line-height: 1;
@@ -262,7 +262,7 @@ li .icons-card {
 
 @media (max-width: 768px) {
   #header #logo h1 {
-    font-size: 28px;
+    font-size: 20px;
   }
   #header #logo img {
     max-height: 40px;
@@ -317,7 +317,7 @@ li .icons-card {
 #intro h2 {
   color: #fff;
   margin-bottom: 30px;
-  font-size: 48px;
+  font-size: 40px;
   font-weight: 700;
 }
 
