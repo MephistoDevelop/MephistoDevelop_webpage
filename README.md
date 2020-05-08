@@ -26,9 +26,6 @@
 
 [Live GitHub Pages](https://mephistodevelop.github.io/MephistoDevelop_webpage/public/index.html)
 
-[Live Firebase Demo](https://mephistodevelop.firebaseapp.com)
-
-
 ## Getting Started
 To start using this project you will need to clone or download this repository to your localhost and then open the index.html file on your server.
 
